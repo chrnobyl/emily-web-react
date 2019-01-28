@@ -11,33 +11,34 @@ export default class MenuExampleInvertedSecondary extends Component {
     const { activeItem } = this.state
 
     return (
-      <Menu pointing stackable secondary widths="5" size="massive">
-        <Menu.Item name='emily'
+      <Menu stackable inverted color='grey' widths='4' size='massive'>
+        <Menu.Item name='bio'
           as={Link} to='/'
-          active={activeItem === 'emily'}
+          position='right'
+          active={activeItem === 'bio'}
           onClick={this.handleItemClick}>
-          <h2 className="nav">Emily Hochberg</h2>
+          <h3 className="nav">Home</h3>
         </Menu.Item>
         <Menu.Item name='bio'
           as={Link} to='/'
           position='right'
           active={activeItem === 'bio'}
           onClick={this.handleItemClick}>
-          <h2 className="nav">Bio</h2>
+          <h3 className="nav">About</h3>
         </Menu.Item>
         <Menu.Item
           name='samples'
           as={Link} to='/writing_samples'
           active={activeItem === 'samples'}
           onClick={this.handleItemClick}>
-          <h2 className="nav">Writing Samples</h2>
+          <h3 className="nav">Writing Samples</h3>
         </Menu.Item>
         <Menu.Item
           name='contact'
           as={Link} to='/contact'
           active={activeItem === 'contact'}
           onClick={this.handleItemClick}>
-          <h2 className="nav">Contact</h2>
+          <h3 className="nav">Contact</h3>
         </Menu.Item>
       </Menu>
     )

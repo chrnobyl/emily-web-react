@@ -39,6 +39,23 @@
   font-family: monospace;
 }
 
+.header {
+  text-align: center;
+  font-size: large;
+  padding-left: 10em;
+  padding-right: 10em;
+  padding-top: 6em;
+  padding-bottom: 5em;
+}
+
+.icons {
+  float: right;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
