@@ -6,7 +6,7 @@ import './App.css';
 const Bio = (props) => {
   return (
     <Route path="/" render={() =>
-      <div class='block'>
+      <div className='block'>
         <h1>Bio goes here</h1>
         <br/>
 

@@ -6,7 +6,7 @@ import './App.css';
 const WritingSamples = (props) => {
   return (
     <Route path="/writing_samples" render={() =>
-      <div class='block'>
+      <div className='block'>
         <h1>Here are some writing samples</h1>
         <br/>
 
