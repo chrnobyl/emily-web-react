@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 // import { Grid, Menu, Segment, Button, Modal } from 'semantic-ui-react'
 import { Link, Switch, Route } from 'react-router-dom'
-import Bio from './Bio'
+import Home from './Home'
 import WritingSamples from './WritingSamples'
 import Contact from './Contact'
 import './App.css';
@@ -10,7 +10,7 @@ const Container = (props) => {
   return (
     <div>
       <Switch>
-        <Route exact path = '/' render= {() =><Bio />}/>
+        <Route exact path = '/' render= {() =><Home />}/>
         <Route exact path = '/writing_samples' render= {() =><WritingSamples />}/>
         <Route exact path = '/contact' render= {() =><Contact />}/>
       </Switch>

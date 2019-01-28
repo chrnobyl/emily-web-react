@@ -6,7 +6,7 @@ import './App.css';
 const Contact = (props) => {
   return (
     <Route path="/contact" render={() =>
-      <div class='block'>
+      <div className='block'>
         <h1>Contact info goes here</h1>
         <br/>
 
