@@ -56,6 +56,26 @@
   padding-bottom: 1em;
 }
 
+.intro {
+  text-align: center;
+  font-size: large;
+  padding-bottom: 2em;
+}
+
+.bio {
+  text-align: left;
+  font-size: large;
+  padding-left: 0em;
+  padding-right: 2em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  width: 50%;
+}
+
+.profilePic {
+
+}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }

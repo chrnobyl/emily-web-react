@@ -4,6 +4,10 @@ import NavBar from './NavBar';
 import './App.css';
 
 const Header = (props) => {
+  let style = {
+    fontSize: 36
+  }
+
   return (
     <div>
       <div className='icons'>
@@ -11,8 +15,8 @@ const Header = (props) => {
         <Icon onClick={()=> window.open("https://www.linkedin.com/in/chrisbuggelli/", "_blank")} link name="twitter" size="big" />
       </div>
       <div className='header'>
-        <h1 className='nav'>Emily Hochberg</h1>
-        <h2 className='nav'>Travel and Lifestyle Editor</h2>
+        <h1 className='nav' style={style}>Emily Hochberg</h1>
+        <h1 className='nav'>Travel and Lifestyle Editor</h1>
       </div>
       <NavBar />
     </div>
