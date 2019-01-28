@@ -45,31 +45,35 @@
   padding-left: 10em;
   padding-right: 10em;
   padding-top: 6em;
-  padding-bottom: 5em;
+  padding-bottom: 3em;
 }
 
 .icons {
   float: right;
-  padding-left: 1em;
-  padding-right: 1em;
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding-right: 4em;
+  padding-top: 2em;
 }
 
 .intro {
   text-align: center;
   font-size: large;
-  padding-bottom: 2em;
+  padding-left: 4em;
+  padding-right: 4em;
+  padding-top: 6em;
+  padding-bottom: 6em;
+  background-color: #A7B3A5;
+  font-family: cursive;
 }
 
 .bio {
   text-align: left;
   font-size: large;
-  padding-left: 0em;
-  padding-right: 2em;
+  padding-left: 4em;
+  padding-right: 3em;
   padding-top: 2em;
   padding-bottom: 2em;
-  width: 50%;
+  width: 60%;
+  background-color: white;
 }
 
 .profilePic {
