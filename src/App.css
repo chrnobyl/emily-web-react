@@ -55,15 +55,16 @@
 }
 
 .intro {
+  grid-area: header;
   text-align: center;
   font-size: large;
   padding-left: 4em;
   padding-right: 4em;
-  padding-top: 6em;
+  padding-top: 5em;
   padding-bottom: 6em;
   background-color: #A7B3A5;
   font-family: sans-serif;
-  height: 30%;
+  height: 30vh;
 }
 
 .bio {
@@ -102,7 +103,8 @@
   position: relative;
 }
 
-.travelGuides {
+.travel-guides {
+  grid-area: left-desc;
   float: left;
   text-align: left;
   font-size: large;
@@ -112,6 +114,16 @@
   padding-bottom: 2em; */
   background-color: white;
   position: relative;
+}
+
+.travel-pic {
+  grid-area: left-pic;
+  float: left;
+}
+
+.lifestyle-pic {
+  grid-area: right-pic;
+  float: right;
 }
 
 .lifestyle {
@@ -132,9 +144,16 @@
   /* max-width: 700px; */
 }
 
+/* .item1 { grid-area: header; } */
+.item2 { grid-area: left-pic; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
 .home-grid {
   display: grid;
-  grid-column-gap: 1rem;
+  height: 100vh;
+  grid-column-gap: 0;
   grid-row-gap: 0;
   grid-template-areas:
     'header header header header header header'
