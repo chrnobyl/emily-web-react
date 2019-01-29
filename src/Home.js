@@ -9,35 +9,23 @@ import './App.css';
 const Home = (props) => {
   return (
     <Route path="/" render={() =>
-      <Grid stackable style={{height: '100vh'}}>
-        <Grid.Row style={{padding: '0', paddingBottom: '0', paddingTop: '1rem'}}>
-          <Grid.Column className='intro' textAlign='center'>
+      <div className='home-grid'>
+        <div className='intro'>
             I've written for several publications on travel, lifestyle, and real estate. My true passion lies in discovering new places and finding the best of what they have to offer.
-          </Grid.Column>
-        </Grid.Row>
-        <Grid.Row className='noPadding'>
-          <Grid.Column width={4}>
-            <Image src='ramen.jpg' alt='ramen'/>
-          </Grid.Column>
-          <Grid.Column width={4}>
-            <TravelGuides />
-          </Grid.Column>
-          <Grid.Column width={4}>
-            <Image src='westlight.jpg' alt='ramen'/>
-          </Grid.Column>
-          <Grid.Column width={4}>
-            <Lifestyle />
-          </Grid.Column>
-        </Grid.Row>
-        <Grid.Row>
-          <Grid.Column width={9}>
-
-          </Grid.Column>
-          <Grid.Column width={7}>
-
-          </Grid.Column>
-        </Grid.Row>
-      </Grid>
+        </div>
+        <div className='travel-pic'>
+          <Image src='ramen.jpg' alt='ramen'/>
+        </div>
+        <div className='travel-guides'>
+          <TravelGuides />
+        </div>
+        <div className='lifestyle-pic'>
+          <Image src='westlight.jpg' alt='ramen'/>
+        </div>
+        <div className='lifestyle'>
+          <Lifestyle />
+        </div>
+      </div>
       }/>
   )
 }
