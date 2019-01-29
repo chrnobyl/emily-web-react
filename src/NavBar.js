@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { Menu, Segment } from 'semantic-ui-react'
 
 export default class MenuExampleInvertedSecondary extends Component {
-  state = { activeItem: 'bio' }
+  state = { activeItem: 'home' }
 
   handleItemClick = (e, { name }) => this.setState({ activeItem: name })
 
@@ -19,10 +19,10 @@ export default class MenuExampleInvertedSecondary extends Component {
           onClick={this.handleItemClick}>
           <h3 className="nav">Home</h3>
         </Menu.Item>
-        <Menu.Item name='bio'
-          as={Link} to='/'
+        <Menu.Item name='about'
+          as={Link} to='/about'
           position='right'
-          active={activeItem === 'bio'}
+          active={activeItem === 'about'}
           onClick={this.handleItemClick}>
           <h3 className="nav">About</h3>
         </Menu.Item>
