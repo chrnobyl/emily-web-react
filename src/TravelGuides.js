@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Link, Switch, Route } from 'react-router-dom'
+// import { Link, Switch, Route } from 'react-router-dom'
 import './App.css';
 
 const TravelGuides = (props) => {
