@@ -175,7 +175,7 @@
   height: inherit;
   grid-column-gap: 0;
   grid-row-gap: 0;
-  grid-template-rows: 10em 50em 50em;
+  grid-template-rows: auto auto auto;
   grid-template-columns: 30em auto auto 30em auto auto;
   grid-template-areas:
     'header header header header header header'
