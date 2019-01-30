@@ -5,6 +5,7 @@ import { Grid, Image } from 'semantic-ui-react'
 import TravelGuides from './TravelGuides'
 import Lifestyle from './Lifestyle'
 import Logos from './Logos'
+import WorkTogether from './WorkTogether'
 import './App.css';
 
 const Home = (props) => {
@@ -16,15 +17,16 @@ const Home = (props) => {
         </div>
         <div className='travel-pic'>
         </div>
-        <div className='travel-guides'>
-          <TravelGuides />
-        </div>
+        <TravelGuides />
         <div className='lifestyle-pic'>
         </div>
-        <div className='lifestyle'>
-          <Lifestyle />
-        </div>
+        <Lifestyle />
         <Logos />
+        <div className='work-together'>
+          <WorkTogether />
+        </div>
+        <div className='work-together-pic'>
+        </div>
       </div>
       }/>
   )
