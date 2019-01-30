@@ -22,10 +22,8 @@ const Home = (props) => {
         </div>
         <Lifestyle />
         <Logos />
-        <div className='work-together'>
-          <WorkTogether />
-        </div>
-        <div className='work-together-pic'>
+        <WorkTogether />
+        <div className='work-pic'>
         </div>
       </div>
       }/>
