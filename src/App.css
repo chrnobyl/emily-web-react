@@ -81,24 +81,12 @@
 }
 
 .mid {
-  /* text-align: left;
-  font-size: large;
-  padding-left: 4em;
-  padding-right: 3em;
-  padding-top: 2em;
-  padding-bottom: 2em; */
   width: 100%;
   height: 100%;
   position: absolute;
 }
 
 .postmid {
-  /* text-align: left;
-  font-size: large;
-  padding-left: 4em;
-  padding-right: 3em;
-  padding-top: 2em;
-  padding-bottom: 2em; */
   width: 100%;
   position: relative;
 }
@@ -167,27 +155,59 @@
   grid-template-areas:
     'header header header header header header'
     'left-pic left-desc left-desc right-pic right-desc right-desc'
-    'menu footer footer footer footer footer';
+    'logo logo logo logo logo logo';
 }
 
 .logo-grid {
   display: grid;
+  grid-area: logo;
   height: inherit;
+  width: 100%;
   grid-column-gap: 0;
   grid-row-gap: 0;
-  grid-template-rows: auto auto auto;
-  grid-template-columns: 30em auto auto 30em auto auto;
+  grid-template-rows: 10em auto auto;
+  grid-template-columns: auto;
   grid-template-areas:
-    'header header header header header header'
-    'left-pic left-desc left-desc right-pic right-desc right-desc'
-    'menu footer footer footer footer footer';
+    'logo-header'
+    'description'
+    'logo1 logo2 logo3 logo4 logo5 logo6';
 }
 
-/* .ui.stackable.grid > .row.noPadding {
-  padding: 0 !important;
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
-} */
+
+
+.logo-intro {
+  grid-area: logo-header;
+  text-align: center;
+  font-size: large;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-top: 4rem;
+  padding-bottom: 5rem;
+  background-color: #A7B3A5;
+  font-family: sans-serif;
+  /* height: 10rem; */
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+
+.logo-description {
+  grid-area: description;
+  text-align: center;
+  font-size: large;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-top: 4rem;
+  padding-bottom: 5rem;
+  background-color: #A7B3A5;
+  font-family: sans-serif;
+  /* height: 10rem; */
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }

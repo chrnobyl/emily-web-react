@@ -4,6 +4,7 @@ import { Parallax, Background } from 'react-parallax'
 import { Grid, Image } from 'semantic-ui-react'
 import TravelGuides from './TravelGuides'
 import Lifestyle from './Lifestyle'
+import Logos from './Logos'
 import './App.css';
 
 const Home = (props) => {
@@ -23,6 +24,7 @@ const Home = (props) => {
         <div className='lifestyle'>
           <Lifestyle />
         </div>
+        <Logos />
       </div>
       }/>
   )
