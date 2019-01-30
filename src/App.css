@@ -58,13 +58,13 @@
   grid-area: header;
   text-align: center;
   font-size: large;
-  padding-left: 4em;
-  padding-right: 4em;
-  padding-top: 5em;
-  padding-bottom: 6em;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-top: 4rem;
+  padding-bottom: 5rem;
   background-color: #A7B3A5;
   font-family: sans-serif;
-  height: 30vh;
+  height: 10rem;
 }
 
 .bio {
@@ -110,32 +110,39 @@
   font-size: large;
   padding-left: 2em;
   padding-right: 2em;
-  /* padding-top: 1em;
-  padding-bottom: 2em; */
-  background-color: white;
-  position: relative;
-}
-
-.travel-pic {
-  grid-area: left-pic;
-  float: left;
-}
-
-.lifestyle-pic {
-  grid-area: right-pic;
-  float: right;
+  padding-top: 4em;
+  padding-bottom: 2em;
 }
 
 .lifestyle {
+  grid-area: right-desc;
   float: right;
   text-align: left;
   font-size: large;
   padding-left: 2em;
   padding-right: 2em;
-  /* padding-top: 1em;
-  padding-bottom: 2em; */
-  background-color: white;
-  position: relative;
+  padding-top: 4em;
+  padding-bottom: 2em;
+}
+
+.travel-pic {
+  grid-area: left-pic;
+  float: left;
+  width: 100%;
+  background-image: url(ramen.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.lifestyle-pic {
+  grid-area: right-pic;
+  /* float: right; */
+  width: 100%;
+  background-image: url(poznan.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
 }
 
 .pic {
@@ -155,6 +162,21 @@
   height: 100vh;
   grid-column-gap: 0;
   grid-row-gap: 0;
+  grid-template-rows: 10em 50em 50em;
+  grid-template-columns: 30em auto auto 30em auto auto;
+  grid-template-areas:
+    'header header header header header header'
+    'left-pic left-desc left-desc right-pic right-desc right-desc'
+    'menu footer footer footer footer footer';
+}
+
+.logo-grid {
+  display: grid;
+  height: inherit;
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+  grid-template-rows: 10em 50em 50em;
+  grid-template-columns: 30em auto auto 30em auto auto;
   grid-template-areas:
     'header header header header header header'
     'left-pic left-desc left-desc right-pic right-desc right-desc'
