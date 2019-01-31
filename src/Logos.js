@@ -9,9 +9,6 @@ const Logos = (props) => {
       <div className='logo-intro'>
         I've written for these companies:
       </div>
-      <div className='logo-description'>
-        Here is where the description goes
-      </div>
       <div className='redfin'>
       </div>
       <div className='mtv'>
