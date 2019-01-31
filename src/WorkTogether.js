@@ -1,13 +1,15 @@
 import React, { Component } from 'react'
 // import { Link, Switch, Route } from 'react-router-dom'
+import { Button } from 'semantic-ui-react'
 import './App.css';
 
 const WorkTogether = (props) => {
   return (
     <div className='work-together'>
       <p>
-        Pellentesque pulvinar id orci eu accumsan. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean pellentesque convallis nulla, ac mattis nisl malesuada et. Donec ut nulla nibh. Quisque eget mi lorem. Aliquam tortor odio, pulvinar eget pretium sit amet, semper nec lorem. Vestibulum volutpat tempor cursus. Etiam gravida tellus consectetur tellus feugiat, sit amet pretium ligula suscipit.
+        Let's work together! Drop me a line and I'll see what I can do for you.
       </p>
+      <Button>Contact me</Button>
     </div>
   )
 }
