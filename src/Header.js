@@ -11,8 +11,8 @@ const Header = (props) => {
   return (
     <div>
       <div className='icons'>
-        <Icon onClick={()=> window.open('https://www.linkedin.com/in/emilyhochberg/', "_blank")} link name="linkedin" size="big" />
-        <Icon onClick={()=> window.open('https://twitter.com/emily.hochberg', "_blank")} link name="twitter" size="big" />
+        <Icon onClick={()=> window.open('https://www.linkedin.com/in/emilyhochberg/', '_blank')} link name='linkedin' size='big' />
+        <Icon onClick={()=> window.open('https://twitter.com/emily.hochberg', '_blank')} link name='twitter' size='big' />
       </div>
       <div className='header'>
         <h1 className='nav' style={style}>Emily Hochberg</h1>
@@ -20,7 +20,6 @@ const Header = (props) => {
       </div>
       <NavBar />
     </div>
-
   )
 }
 
