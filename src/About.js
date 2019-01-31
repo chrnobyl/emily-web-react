@@ -28,7 +28,7 @@ export default class About extends Component {
                 Aenean accumsan sapien nec libero ornare placerat. Aenean leo sapien, auctor a tempus volutpat, gravida ut enim. Fusce sagittis rhoncus turpis sed aliquet. Integer scelerisque, risus quis vulputate fermentum, tellus ex pharetra lectus, sit amet bibendum risus enim id urna. Praesent feugiat, libero ac porttitor consectetur, dolor tortor tincidunt augue, nec pellentesque eros ligula nec tortor. Duis in ipsum fringilla, posuere nunc sit amet, rutrum nibh.
               </p>
             </div>
-            <Image src='em_bowie.jpg' alt='em_bowie' style={{float: 'right', position: 'relative'}} size='huge'/>
+            <Image src='em_bowie.jpg' alt='em_bowie' style={{float: 'right'}} size='huge'/>
           </div>
         </Transition>
       }/>

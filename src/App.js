@@ -10,7 +10,7 @@ class App extends Component {
     return (
       <div>
         <Header />
-        <Container style={{position: 'relative'}}/>
+        <Container />
         <Footer />
       </div>
     );
