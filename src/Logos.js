@@ -11,7 +11,7 @@ const Logos = (props) => {
       </div>
       <div className='redfin' onClick={()=> window.open('https://www.redfin.com/blog/author/emily-hochbergredfin-com', '_blank')}>
       </div>
-      <div className='mtv' onClick={()=> window.open('https://es.xfinity.com/sdmy/blogs/tv/author/emilyhochberg/page/1/', '_blank')}>
+      <div className='mtv' onClick={()=> window.open('http://www.mtv.com/news/author/emilyhochberg/', '_blank')}>
       </div>
       <div className='jerusalem-post'>
       </div>
