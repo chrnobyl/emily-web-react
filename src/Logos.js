@@ -9,7 +9,7 @@ const Logos = (props) => {
       <div className='logo-intro'>
         I've written for these companies:
       </div>
-      <div className='redfin'>
+      <div className='redfin' onClick={()=> window.open('https://www.redfin.com/blog/author/emily-hochbergredfin-com', '_blank')}>
       </div>
       <div className='mtv'>
       </div>

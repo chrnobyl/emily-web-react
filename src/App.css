@@ -260,6 +260,7 @@
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: contain;
+  cursor: pointer;
 }
 
 .people {
