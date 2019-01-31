@@ -150,7 +150,7 @@
 
 .home-grid {
   display: grid;
-  height: 100vh;
+  height: 100%;
   grid-column-gap: 0;
   grid-row-gap: 0;
   grid-template-rows: 10em 50em 30em 50em;
@@ -370,7 +370,7 @@
 }
 
 .footer {
-  position: fixed;
+  /* position: absolute; */
   left: 0;
   right: 0;
   bottom: 0;
