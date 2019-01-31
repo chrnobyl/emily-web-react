@@ -11,13 +11,13 @@ const Logos = (props) => {
       </div>
       <div className='redfin' onClick={()=> window.open('https://www.redfin.com/blog/author/emily-hochbergredfin-com', '_blank')}>
       </div>
-      <div className='mtv'>
+      <div className='mtv' onClick={()=> window.open('https://es.xfinity.com/sdmy/blogs/tv/author/emilyhochberg/page/1/', '_blank')}>
       </div>
       <div className='jerusalem-post'>
       </div>
       <div className='grey'>
       </div>
-      <div className='xfinity'>
+      <div className='xfinity' onClick={()=> window.open('https://es.xfinity.com/sdmy/blogs/tv/author/emilyhochberg/page/1/', '_blank')}>
       </div>
       <div className='portersail'>
       </div>
