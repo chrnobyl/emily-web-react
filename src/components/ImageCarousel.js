@@ -2,7 +2,7 @@ import { CarouselProvider, Image, Slide, Slider } from 'pure-react-carousel'
 import React from 'react'
 import { Divider } from 'semantic-ui-react'
 
-import CustomDotGroup from './components/CustomDotGroup'
+import CustomDotGroup from './CustomDotGroup'
 
 const ImageCarousel = () => (
   <CarouselProvider
