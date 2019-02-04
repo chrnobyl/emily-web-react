@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
-// import { Link, Switch, Route } from 'react-router-dom'
 import { Button } from 'semantic-ui-react'
-import './App.css';
+import '../App.css';
 
 const WorkTogether = (props) => {
   return (

@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { Image } from 'semantic-ui-react'
-// import { Link, Switch, Route } from 'react-router-dom'
-import './App.css';
+import '../App.css';
 
 const Logos = (props) => {
   return (

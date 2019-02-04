@@ -4,7 +4,7 @@ import Home from './Home'
 import About from './About'
 import WritingSamples from './WritingSamples'
 import Contact from './Contact'
-import './App.css';
+import '../App.css';
 
 const Container = (props) => {
   return (
