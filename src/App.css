@@ -28,6 +28,11 @@
 
 @import url('https://fonts.googleapis.com/css?family=Comfortaa');
 
+.carousel {
+  grid-area: carousel;
+  width: 30%;
+}
+
 body {
   font-family: 'Comfortaa';
 }
@@ -41,6 +46,39 @@ body {
   padding-bottom: 2em;
   min-height: 80vh;
   font-family: var(--main-font);
+}
+
+.samples-grid {
+  display: grid;
+  text-align: left;
+  font-size: large;
+  font-family: var(--main-font);
+  padding-left: 10em;
+  padding-right: 10em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  min-height: 80vh;
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+  grid-template-rows: 50em;
+  grid-template-columns: 70% 30%;
+  grid-template-areas:
+    's-text carousel'
+}
+
+.samples-text {
+  grid-area: s-text;
+  float: left;
+  text-align: center;
+  /* font-size: large; */
+  /* font-family: var(--main-font); */
+  /* font-weight: bolder; */
+  color: #DF744A;
+  /* padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 15em;
+  padding-bottom: 2em; */
+  /* background-color: #8FD8D2; */
 }
 
 .large.text {
@@ -87,11 +125,9 @@ body {
   float: left;
   font-size: large;
   padding-left: 4em;
-  /* padding-right: 3em; */
   padding-top: 2em;
   padding-bottom: 2em;
   width: 50%;
-  /* background-color: white; */
   position: relative;
   font-family: var(--main-font);
 }
