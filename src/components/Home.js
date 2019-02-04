@@ -6,7 +6,7 @@ import TravelGuides from './TravelGuides'
 import Lifestyle from './Lifestyle'
 import Logos from './Logos'
 import WorkTogether from './WorkTogether'
-import './App.css';
+import '../App.css';
 
 export default class Home extends Component {
   state = { visible: false }
