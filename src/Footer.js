@@ -7,7 +7,8 @@ const Footer = (props) => {
     <div className='footer'>
       <Segment secondary textAlign='center' size='tiny'>
         <Icon onClick={()=> window.open('https://www.linkedin.com/in/emilyhochberg/', '_blank')} link name='linkedin' size='big' />
-        emily [d o t] hochberg [a t] gmail [d o t] com
+        <div>© Emily Hochberg 2019</div>
+        <div>Created by Chris Buggelli</div>
       </Segment>
     </div>
   )
