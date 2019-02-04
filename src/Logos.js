@@ -9,18 +9,15 @@ const Logos = (props) => {
       <div className='logo-intro'>
         I've written for these companies:
       </div>
-      <div className='logo-description'>
-        Here is where the description goes
+      <div className='redfin' onClick={()=> window.open('https://www.redfin.com/blog/author/emily-hochbergredfin-com', '_blank')}>
       </div>
-      <div className='redfin'>
-      </div>
-      <div className='mtv'>
+      <div className='mtv' onClick={()=> window.open('http://www.mtv.com/news/author/emilyhochberg/', '_blank')}>
       </div>
       <div className='jerusalem-post'>
       </div>
       <div className='grey'>
       </div>
-      <div className='xfinity'>
+      <div className='xfinity' onClick={()=> window.open('https://es.xfinity.com/sdmy/blogs/tv/author/emilyhochberg/page/1/', '_blank')}>
       </div>
       <div className='portersail'>
       </div>
