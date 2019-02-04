@@ -4,7 +4,10 @@
   font-family: sans-serif;
 } */
 
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+
 html, body {
   height: 100%;
-  padding-bottom: 60px; 
+  padding-bottom: 60px;
+  font-family: 'Comfortaa';
 }

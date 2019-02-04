@@ -26,6 +26,12 @@
   --main-font: 'Comfortaa';
 }
 
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+
+body {
+  font-family: 'Comfortaa';
+}
+
 .block {
   text-align: left;
   font-size: large;
@@ -34,6 +40,7 @@
   padding-top: 2em;
   padding-bottom: 2em;
   min-height: 80vh;
+  font-family: var(--main-font);
 }
 
 .large.text {
@@ -86,6 +93,7 @@
   width: 50%;
   /* background-color: white; */
   position: relative;
+  font-family: var(--main-font);
 }
 
 .about-grid {
