@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Image } from 'semantic-ui-react'
-import '../App.css';
+import '../../../../App.css';
 
 const Logos = (props) => {
   return (

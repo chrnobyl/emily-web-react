@@ -1,14 +1,14 @@
 import React, { Component } from 'react'
 import { Transition, Segment, Header, List, Modal } from 'semantic-ui-react'
 import { Link, Switch, Route } from 'react-router-dom'
-import ImageCarousel from './ImageCarousel'
-import PsFeatureGuides from './PsFeatureGuides'
-import PsPhotoEssays from './PsPhotoEssays'
-import PsAppCuration from './PsAppCuration'
-import PsVenueWriteUps from './PsVenueWriteUps'
-import PsInterviews from './PsInterviews'
+import ImageCarousel from './ImageCarousel/ImageCarousel'
+import PsFeatureGuides from './PsFeatureGuides/PsFeatureGuides'
+import PsPhotoEssays from './PsPhotoEssays/PsPhotoEssays'
+import PsAppCuration from './PsAppCuration/PsAppCuration'
+import PsVenueWriteUps from './PsVenueWriteUps/PsVenueWriteUps'
+import PsInterviews from './PsInterviews/PsInterviews'
 import 'pure-react-carousel/dist/react-carousel.es.css'
-import '../App.css'
+import '../../../App.css'
 
 export default class WritingSamples extends Component {
   state = { visible: false }
