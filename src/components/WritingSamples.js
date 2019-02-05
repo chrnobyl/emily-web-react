@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Transition, Segment, Header } from 'semantic-ui-react'
+import { Transition, Segment, Header, List, Modal } from 'semantic-ui-react'
 import { Link, Switch, Route } from 'react-router-dom'
 import ImageCarousel from './ImageCarousel'
 import 'pure-react-carousel/dist/react-carousel.es.css'
@@ -23,11 +23,42 @@ export default class WritingSamples extends Component {
           <div className='samples-container'>
             <div className='samples-text'>
               <h1 style={{fontFamily: 'Comfortaa'}}>Here are some writing samples</h1>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus efficitur at nibh nec placerat. In pharetra est nec quam cursus, nec malesuada turpis pulvinar. Aliquam mattis, ipsum quis fringilla ornare, orci ante accumsan neque, vel tempus mauris urna vitae ipsum. Suspendisse et fringilla velit, eu aliquet nibh. Suspendisse luctus turpis vitae nisi aliquet, quis dictum sem molestie. Sed eu enim ut urna finibus convallis in at enim. Aliquam eu nunc porttitor, pretium purus quis, congue lorem. Donec elementum ut risus a venenatis. Sed molestie facilisis nulla, quis fermentum dolor tempor et. Integer quis scelerisque leo, vitae luctus enim. Phasellus euismod suscipit fringilla. Suspendisse sed porttitor quam.
-              </p>
+              <List size='medium' relaxed>
+                <List.Header>Porter & Sail</List.Header>
+                <List.Item>
+                  <Modal trigger={<a>Lisbon: The Best of the Best</a>} basic centered>
+                    <Header content='Lisbon: The Best of the Best' />
+                    <Modal.Content>
+                      <ImageCarousel className='carousel'/>
+                    </Modal.Content>
+                  </Modal>
+                </List.Item>
+                <List.Item>
+                  <Modal trigger={<a>Lisbon: The Best of the Best</a>} basic centered>
+                    <Header content='Lisbon: The Best of the Best' />
+                    <Modal.Content>
+                      <ImageCarousel className='carousel'/>
+                    </Modal.Content>
+                  </Modal>
+                </List.Item>
+                <List.Item>
+                  <Modal trigger={<a>Lisbon: The Best of the Best</a>} basic centered>
+                    <Header content='Lisbon: The Best of the Best' />
+                    <Modal.Content>
+                      <ImageCarousel className='carousel'/>
+                    </Modal.Content>
+                  </Modal>
+                </List.Item>
+                <List.Item>
+                  <Modal trigger={<a>Lisbon: The Best of the Best</a>} basic centered>
+                    <Header content='Lisbon: The Best of the Best' />
+                    <Modal.Content>
+                      <ImageCarousel className='carousel'/>
+                    </Modal.Content>
+                  </Modal>
+                </List.Item>
+              </List>
             </div>
-            <ImageCarousel className='carousel'/>
           </div>
         </Transition>
       }/>
