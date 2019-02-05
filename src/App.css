@@ -421,14 +421,14 @@ body {
   background-size: cover;
 }
 
-.footer {
+/* .footer {
   position: relative;
   left: 0;
   right: 0;
   bottom: 0;
   width: 100%;
   font-family: var(--main-font);
-}
+} */
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
