@@ -20,7 +20,7 @@ export default class WritingSamples extends Component {
     return (
       <Route path='/writing_samples' render={() =>
         <Transition visible={visible} animation='fade' duration={800}>
-          <div className='samples-grid'>
+          <div className='samples-container'>
             <div className='samples-text'>
               <h1 style={{fontFamily: 'Comfortaa'}}>Here are some writing samples</h1>
               <p>
