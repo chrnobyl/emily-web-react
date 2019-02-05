@@ -11,15 +11,15 @@ const CustomDotGroup = ({ slides, size }) => (
       ))}
     </Button.Group>
   </Container>
-);
+)
 
 CustomDotGroup.defaultProps = {
   size: 'mini'
-};
+}
 
 CustomDotGroup.propTypes = {
   slides: PropTypes.number.isRequired,
   size: PropTypes.string
-};
+}
 
 export default CustomDotGroup

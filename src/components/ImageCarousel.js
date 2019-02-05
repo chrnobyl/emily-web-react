@@ -16,11 +16,7 @@ import CustomDotGroup from './CustomDotGroup'
 import '../App.css'
 
 const ImageCarousel = () => (
-  <CarouselProvider
-    naturalSlideWidth={1}
-    naturalSlideHeight={2}
-    totalSlides={11}
-  >
+  <CarouselProvider naturalSlideWidth={1} naturalSlideHeight={2} totalSlides={11}>
     <Slider>
       <Slide tag='a' index={0}>
         <Image src={IMG_0849} />
@@ -62,4 +58,4 @@ const ImageCarousel = () => (
   </CarouselProvider>
 )
 
-export default ImageCarousel;
+export default ImageCarousel
