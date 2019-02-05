@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Item, Icon } from 'semantic-ui-react'
-import NavBar from './NavBar';
-import '../App.css';
+import NavBar from '../NavBar/NavBar';
+import '../../App.css';
 
 const Header = (props) => {
   let style = {

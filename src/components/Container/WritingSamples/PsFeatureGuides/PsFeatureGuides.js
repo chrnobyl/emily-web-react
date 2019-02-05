@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import { List, Modal, Header } from 'semantic-ui-react'
-import ImageCarousel from './ImageCarousel'
-import '../App.css'
+import ImageCarousel from '../ImageCarousel/ImageCarousel'
+import '../../../../App.css'
 
-const PsPhotoEssays = (props) => {
+const PsFeatureGuides = (props) => {
   return (
     <List size='medium' relaxed>
       <List.Item>
@@ -50,4 +50,4 @@ const PsPhotoEssays = (props) => {
   )
 }
 
-export default PsPhotoEssays
+export default PsFeatureGuides

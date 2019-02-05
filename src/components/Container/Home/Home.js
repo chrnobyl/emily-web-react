@@ -2,11 +2,11 @@ import React, { Component } from 'react'
 import { Link, Switch, Route } from 'react-router-dom'
 import { Parallax, Background } from 'react-parallax'
 import { Grid, Image, Transition } from 'semantic-ui-react'
-import TravelGuides from './TravelGuides'
-import Lifestyle from './Lifestyle'
-import Logos from './Logos'
-import WorkTogether from './WorkTogether'
-import '../App.css'
+import TravelGuides from './TravelGuides/TravelGuides'
+import Lifestyle from './Lifestyle/Lifestyle'
+import Logos from './Logos/Logos'
+import WorkTogether from './WorkTogether/WorkTogether'
+import '../../../App.css'
 
 export default class Home extends Component {
   state = { visible: false }
