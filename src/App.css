@@ -29,9 +29,10 @@
 @import url('https://fonts.googleapis.com/css?family=Comfortaa');
 
 .carousel {
-  margin-left: 10%;
-  width: 25%;
-  display: inline-block;
+  /* margin-left: 10%; */
+  width: 45%;
+  /* display: inline-block; */
+  margin: 0 auto;
 }
 
 body {
