@@ -4,6 +4,9 @@ import { Link, Switch, Route } from 'react-router-dom'
 import ImageCarousel from './ImageCarousel'
 import PsFeatureGuides from './PsFeatureGuides'
 import PsPhotoEssays from './PsPhotoEssays'
+import PsAppCuration from './PsAppCuration'
+import PsVenueWriteUps from './PsVenueWriteUps'
+import PsInterviews from './PsInterviews'
 import 'pure-react-carousel/dist/react-carousel.es.css'
 import '../App.css'
 
@@ -30,6 +33,12 @@ export default class WritingSamples extends Component {
               <PsPhotoEssays />
               <h2>Feature Guides</h2>
               <PsFeatureGuides />
+              <h2>App Curation</h2>
+              <PsAppCuration />
+              <h2>Venue Write Ups</h2>
+              <PsVenueWriteUps />
+              <h2>Interviews</h2>
+              <PsInterviews />
             </div>
           </div>
         </Transition>
