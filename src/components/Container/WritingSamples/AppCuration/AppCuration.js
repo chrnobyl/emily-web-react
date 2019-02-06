@@ -1,16 +1,16 @@
 import React, { Component } from 'react'
 import { List, Modal, Header } from 'semantic-ui-react'
-import ImageCarousel from '../ImageCarousel/ImageCarousel'
+import AppCurationCarousel from './AppCurationCarousel/AppCurationCarousel'
 import '../../../../App.css'
 
-const PsAppCuration = (props) => {
+const AppCuration = (props) => {
   return (
     <List size='medium' relaxed>
       <List.Item>
         <Modal trigger={<a>Poznan App Curation</a>} basic>
           <Header content='Poznan App Curation' />
           <Modal.Content>
-            <ImageCarousel className='carousel'/>
+            <AppCurationCarousel className='carousel'/>
           </Modal.Content>
         </Modal>
       </List.Item>
@@ -18,4 +18,4 @@ const PsAppCuration = (props) => {
   )
 }
 
-export default PsAppCuration
+export default AppCuration

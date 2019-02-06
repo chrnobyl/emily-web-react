@@ -5,7 +5,7 @@ import styles from './Footer.module.css'
 
 const Footer = (props) => {
   return (
-    <div className={styles.foot}>
+    <div className={styles.footer}>
       <Segment secondary textAlign='center' size='tiny'>
         <Icon onClick={()=> window.open('https://www.linkedin.com/in/emilyhochberg/', '_blank')} link name='linkedin' size='big' />
         <div>© Emily Hochberg 2019</div>

@@ -1,48 +1,48 @@
 import React, { Component } from 'react'
 import { List, Modal, Header } from 'semantic-ui-react'
-import FeatureGuidesCarousel from '../FeatureGuidesCarousel/FeatureGuidesCarousel'
+import PhotoEssaysCarousel from './PhotoEssaysCarousel/PhotoEssaysCarousel'
 import '../../../../App.css'
 
-const PsFeatureGuides = (props) => {
+const PhotoEssays = (props) => {
   return (
     <List size='medium' relaxed>
       <List.Item>
         <Modal trigger={<a>Lisbon: The Best of the Best</a>} basic>
           <Header content='Lisbon: The Best of the Best' />
           <Modal.Content>
-            <FeatureGuidesCarousel className='carousel'/>
+            <PhotoEssaysCarousel className='carousel'/>
           </Modal.Content>
         </Modal>
       </List.Item>
       <List.Item>
         <Modal trigger={<a>Gdansk: The 50 Hour Guide</a>} basic>
-          <Header content='Gdansk: The 50 Hour Guide' />
+          <Header content='Lisbon: The Best of the Best' />
           <Modal.Content>
-            <FeatureGuidesCarousel className='carousel'/>
+            <PhotoEssaysCarousel className='carousel'/>
           </Modal.Content>
         </Modal>
       </List.Item>
       <List.Item>
         <Modal trigger={<a>Paris: Hotel Neighborhood Guide</a>} basic>
-          <Header content='Paris: Hotel Neighborhood Guide' />
+          <Header content='Lisbon: The Best of the Best' />
           <Modal.Content>
-            <FeatureGuidesCarousel className='carousel'/>
+            <PhotoEssaysCarousel className='carousel'/>
           </Modal.Content>
         </Modal>
       </List.Item>
       <List.Item>
         <Modal trigger={<a>Stockholm: Fika Neighborhood Guide</a>} basic>
-          <Header content='Stockholm: Fika Neighborhood Guide' />
+          <Header content='Lisbon: The Best of the Best' />
           <Modal.Content>
-            <FeatureGuidesCarousel className='carousel'/>
+            <PhotoEssaysCarousel className='carousel'/>
           </Modal.Content>
         </Modal>
       </List.Item>
       <List.Item>
         <Modal trigger={<a>Phuket: Private Paradise</a>} basic>
-          <Header content='Phuket: Private Paradise' />
+          <Header content='Lisbon: The Best of the Best' />
           <Modal.Content>
-            <FeatureGuidesCarousel className='carousel'/>
+            <PhotoEssaysCarousel className='carousel'/>
           </Modal.Content>
         </Modal>
       </List.Item>
@@ -50,4 +50,4 @@ const PsFeatureGuides = (props) => {
   )
 }
 
-export default PsFeatureGuides
+export default PhotoEssays

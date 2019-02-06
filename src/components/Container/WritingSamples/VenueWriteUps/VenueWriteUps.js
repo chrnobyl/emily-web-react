@@ -1,16 +1,16 @@
 import React, { Component } from 'react'
 import { List, Modal, Header } from 'semantic-ui-react'
-import ImageCarousel from '../ImageCarousel/ImageCarousel'
+import VenueWriteUpsCarousel from './VenueWriteUpsCarousel/VenueWriteUpsCarousel'
 import '../../../../App.css'
 
-const PsVenueWriteUps = (props) => {
+const VenueWriteUps = (props) => {
   return (
     <List size='medium' relaxed>
       <List.Item>
         <Modal trigger={<a>Paris - Le Richer</a>} basic>
           <Header content='Paris - Le Richer' />
           <Modal.Content>
-            <ImageCarousel className='carousel'/>
+            <VenueWriteUpsCarousel className='carousel'/>
           </Modal.Content>
         </Modal>
       </List.Item>
@@ -18,7 +18,7 @@ const PsVenueWriteUps = (props) => {
         <Modal trigger={<a>Poznan - Weranda Caffe</a>} basic>
           <Header content='Poznan - Weranda Caffe' />
           <Modal.Content>
-            <ImageCarousel className='carousel'/>
+            <VenueWriteUpsCarousel className='carousel'/>
           </Modal.Content>
         </Modal>
       </List.Item>
@@ -26,4 +26,4 @@ const PsVenueWriteUps = (props) => {
   )
 }
 
-export default PsVenueWriteUps
+export default VenueWriteUps
