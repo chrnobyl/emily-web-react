@@ -15,7 +15,7 @@ import IMG_0859 from '../../../../IMG_0859.JPG'
 import CustomDotGroup from '../CustomDotGroup/CustomDotGroup'
 import '../../../../App.css'
 
-const ImageCarousel = () => (
+const FeatureGuidesCarousel = () => (
   <CarouselProvider naturalSlideWidth={1} naturalSlideHeight={2} totalSlides={11}>
     <Slider>
       <Slide tag='a' index={0}>
@@ -58,4 +58,4 @@ const ImageCarousel = () => (
   </CarouselProvider>
 )
 
-export default ImageCarousel
+export default FeatureGuidesCarousel
