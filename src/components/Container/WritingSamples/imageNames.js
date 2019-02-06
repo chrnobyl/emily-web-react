@@ -53,3 +53,19 @@ export const flowerPowerImages = [
                                 'flowerPower_7', 'flowerPower_8', 'flowerPower_9',
                                 'flowerPower_10'
                               ]
+
+export const masiOkaImages = [
+                        'masiOka_1', 'masiOka_2', 'masiOka_3', 'masiOka_4', 'masiOka_5', 'masiOka_6', 'masiOka_7', 'masiOka_8', 'masiOka_9', 'masiOka_10'
+                        ]
+
+export const stellanImages = [
+                              'stellan_1', 'stellan_2', 'stellan_3', 'stellan_4', 'stellan_5', 'stellan_6'
+                              ]
+
+export const steveZahnImages = [
+                                'steveZahn_1', 'steveZahn_2', 'steveZahn_3', 'steveZahn_4', 'steveZahn_5', 'steveZahn_6', 'steveZahn_7', 'steveZahn_8', 'steveZahn_9', 'steveZahn_10', 'steveZahn_11', 'steveZahn_12', 'steveZahn_13'
+                                ]
+
+export const styleSecretsImages = [
+                                  'styleSecrets_1', 'styleSecrets_2', 'styleSecrets_3', 'styleSecrets_4', 'styleSecrets_5', 'styleSecrets_6', 'styleSecrets_7', 'styleSecrets_8', 'styleSecrets_9', 'styleSecrets_10', 'styleSecrets_11', 'styleSecrets_12', 'styleSecrets_13', 'styleSecrets_14', 'styleSecrets_15'
+                                ]

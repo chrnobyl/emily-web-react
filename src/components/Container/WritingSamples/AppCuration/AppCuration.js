@@ -8,7 +8,7 @@ const AppCuration = (props) => {
   return (
     <List size='medium' relaxed>
       <List.Item>
-        <Sample title={'Poznan App Curation'} images={Constants.lisbonImages}/>
+        <Sample title={'Poznan App Curation'} images={Constants.lisbonImages} extension={'.PNG'}/>
       </List.Item>
     </List>
   )

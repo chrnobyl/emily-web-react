@@ -9,19 +9,19 @@ const Interviews = (props) => {
   return (
     <List size='medium' relaxed>
       <List.Item>
-        <Sample title={'Masi Oka Profile (Tokyo)'} images={Constants.gdanskImages}/>
+        <Sample title={'Masi Oka Profile (Tokyo)'} images={Constants.masiOkaImages} extension={'.JPG'}/>
       </List.Item>
       <List.Item>
-        <Sample title={'Stellan Skarsgård Profile (Stockholm)'} images={Constants.gdanskImages} extension={'.JPG'}/>
+        <Sample title={'Stellan Skarsgård Profile (Stockholm)'} images={Constants.stellanImages} extension={'.JPG'}/>
       </List.Item>
       <List.Item>
-        <Sample title={'Steve Zahn Profile (Lexington)'} images={Constants.gdanskImages} extension={'.JPG'}/>
+        <Sample title={'Steve Zahn Profile (Lexington)'} images={Constants.steveZahnImages} extension={'.PNG'}/>
       </List.Item>
       <List.Item>
-        <Sample title={'Flower Power (Poznan)'} images={Constants.gdanskImages} extension={'.JPG'}/>
+        <Sample title={'Flower Power (Poznan)'} images={Constants.flowerPowerImages} extension={'.PNG'}/>
       </List.Item>
       <List.Item>
-        <Sample title={'Style Secrets of the French (Paris)'} images={Constants.gdanskImages} extension={'.JPG'}/>
+        <Sample title={'Style Secrets of the French (Paris)'} images={Constants.styleSecretsImages} extension={'.PNG'}/>
       </List.Item>
     </List>
   )
