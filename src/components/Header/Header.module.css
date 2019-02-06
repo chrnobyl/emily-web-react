@@ -1,0 +1,18 @@
+.nav {
+  font-family: var(--main-font);
+}
+
+.header {
+  text-align: center;
+  font-size: large;
+  padding-left: 10em;
+  padding-right: 10em;
+  padding-top: 6em;
+  padding-bottom: 3em;
+}
+
+.icons {
+  float: right;
+  padding-right: 4em;
+  padding-top: 2em;
+}

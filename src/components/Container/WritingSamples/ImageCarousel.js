@@ -8,7 +8,7 @@ const ImageCarousel = (props) => (
     <Slider>
       {
         props.images.map((name, index) => (
-        <Slide tag='a' index={index}>
+        <Slide tag='a' index={index} key={index}>
           <Image src={require(`${props.location}/${name + props.extension}`)} />
         </Slide>
         )
