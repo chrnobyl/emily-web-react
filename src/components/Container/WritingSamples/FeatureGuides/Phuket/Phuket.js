@@ -2,7 +2,9 @@ import React, { Component } from 'react'
 import { Modal, Header } from 'semantic-ui-react'
 import ImageCarousel from '../../ImageCarousel'
 
-const phuketImages = []
+const phuketImages = ['phuket_1', 'phuket_2', 'phuket_3', 'phuket_4',
+                      'phuket_5', 'phuket_6'
+                     ]
 
 const Phuket = (props) => {
   return (

@@ -50,7 +50,7 @@ body {
   font-family: var(--main-font);
 }
 
-.samples-container {
+/* .samples-container {
   text-align: center;
   font-size: large;
   padding-left: 10em;
@@ -70,7 +70,7 @@ body {
   position: relative;
   display: inline-block;
   vertical-align: top;
-}
+} */
 
 .large.text {
    font-size: 50px;
