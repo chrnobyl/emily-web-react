@@ -1,18 +1,19 @@
 import React, { Component } from 'react'
 import { List, Modal, Header } from 'semantic-ui-react'
+import Lisbon from './Lisbon/Lisbon'
+import ImageCarousel from '../ImageCarousel'
 import FeatureGuidesCarousel from './FeatureGuidesCarousel/FeatureGuidesCarousel'
 import '../../../../App.css'
+
+// const lisbon = ['lisbon_1', 'lisbon_2', 'lisbon_3', 'lisbon_4', 'lisbon_5',
+//                 'lisbon_6', 'lisbon_7', 'lisbon_8', 'lisbon_9', 'lisbon_10',
+//                 'lisbon_11']
 
 const FeatureGuides = (props) => {
   return (
     <List size='medium' relaxed>
       <List.Item>
-        <Modal trigger={<a>Lisbon: The Best of the Best</a>} basic>
-          <Header content='Lisbon: The Best of the Best' />
-          <Modal.Content>
-            <FeatureGuidesCarousel className='carousel'/>
-          </Modal.Content>
-        </Modal>
+        <Lisbon />
       </List.Item>
       <List.Item>
         <Modal trigger={<a>Gdansk: The 50 Hour Guide</a>} basic>
