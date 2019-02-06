@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { List, Modal, Header } from 'semantic-ui-react'
-import ImageCarousel from '../ImageCarousel/ImageCarousel'
+import PhotoEssayCarousel from '../PhotoEssayCarousel/PhotoEssayCarousel'
 import '../../../../App.css'
 
 const PsPhotoEssays = (props) => {
@@ -10,7 +10,7 @@ const PsPhotoEssays = (props) => {
         <Modal trigger={<a>Lisbon: The Best of the Best</a>} basic>
           <Header content='Lisbon: The Best of the Best' />
           <Modal.Content>
-            <ImageCarousel className='carousel'/>
+            <PhotoEssayCarousel className='carousel'/>
           </Modal.Content>
         </Modal>
       </List.Item>
@@ -18,7 +18,7 @@ const PsPhotoEssays = (props) => {
         <Modal trigger={<a>Gdansk: The 50 Hour Guide</a>} basic>
           <Header content='Lisbon: The Best of the Best' />
           <Modal.Content>
-            <ImageCarousel className='carousel'/>
+            <PhotoEssayCarousel className='carousel'/>
           </Modal.Content>
         </Modal>
       </List.Item>
@@ -26,7 +26,7 @@ const PsPhotoEssays = (props) => {
         <Modal trigger={<a>Paris: Hotel Neighborhood Guide</a>} basic>
           <Header content='Lisbon: The Best of the Best' />
           <Modal.Content>
-            <ImageCarousel className='carousel'/>
+            <PhotoEssayCarousel className='carousel'/>
           </Modal.Content>
         </Modal>
       </List.Item>
@@ -34,7 +34,7 @@ const PsPhotoEssays = (props) => {
         <Modal trigger={<a>Stockholm: Fika Neighborhood Guide</a>} basic>
           <Header content='Lisbon: The Best of the Best' />
           <Modal.Content>
-            <ImageCarousel className='carousel'/>
+            <PhotoEssayCarousel className='carousel'/>
           </Modal.Content>
         </Modal>
       </List.Item>
@@ -42,7 +42,7 @@ const PsPhotoEssays = (props) => {
         <Modal trigger={<a>Phuket: Private Paradise</a>} basic>
           <Header content='Lisbon: The Best of the Best' />
           <Modal.Content>
-            <ImageCarousel className='carousel'/>
+            <PhotoEssayCarousel className='carousel'/>
           </Modal.Content>
         </Modal>
       </List.Item>

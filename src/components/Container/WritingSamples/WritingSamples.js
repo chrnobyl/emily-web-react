@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Transition, Segment, Header, List, Modal } from 'semantic-ui-react'
 import { Link, Switch, Route } from 'react-router-dom'
-import ImageCarousel from './ImageCarousel/ImageCarousel'
+import FeatureGuidesCarousel from './FeatureGuidesCarousel/FeatureGuidesCarousel'
 import PsFeatureGuides from './PsFeatureGuides/PsFeatureGuides'
 import PsPhotoEssays from './PsPhotoEssays/PsPhotoEssays'
 import PsAppCuration from './PsAppCuration/PsAppCuration'
