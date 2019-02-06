@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 import { Transition, Segment, Header, List, Modal } from 'semantic-ui-react'
 import { Link, Switch, Route } from 'react-router-dom'
-import FeatureGuidesCarousel from './FeatureGuidesCarousel/FeatureGuidesCarousel'
-import PsFeatureGuides from './PsFeatureGuides/PsFeatureGuides'
-import PsPhotoEssays from './PsPhotoEssays/PsPhotoEssays'
-import PsAppCuration from './PsAppCuration/PsAppCuration'
-import PsVenueWriteUps from './PsVenueWriteUps/PsVenueWriteUps'
-import PsInterviews from './PsInterviews/PsInterviews'
+// import FeatureGuidesCarousel from './FeatureGuidesCarousel/FeatureGuidesCarousel'
+import FeatureGuides from './FeatureGuides/FeatureGuides'
+import PhotoEssays from './PhotoEssays/PhotoEssays'
+import AppCuration from './AppCuration/AppCuration'
+import VenueWriteUps from './VenueWriteUps/VenueWriteUps'
+import Interviews from './Interviews/Interviews'
 import 'pure-react-carousel/dist/react-carousel.es.css'
 import '../../../App.css'
 
@@ -30,15 +30,15 @@ export default class WritingSamples extends Component {
               <h1 style={{fontFamily: 'Comfortaa'}}>Here are some writing samples</h1>
               <h2 style={{fontFamily: 'Comfortaa'}}>Porter & Sail</h2>
               <h2>Hotel Photo Gallery Essays</h2>
-              <PsPhotoEssays />
+              <PhotoEssays />
               <h2>Feature Guides</h2>
-              <PsFeatureGuides />
+              <FeatureGuides />
               <h2>App Curation</h2>
-              <PsAppCuration />
+              <AppCuration />
               <h2>Venue Write Ups</h2>
-              <PsVenueWriteUps />
+              <VenueWriteUps />
               <h2>Interviews</h2>
-              <PsInterviews />
+              <Interviews />
             </div>
           </div>
         </Transition>
