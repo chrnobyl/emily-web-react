@@ -1,14 +1,15 @@
 import React, { Component } from 'react'
 import { Transition, Segment, Header, List, Modal } from 'semantic-ui-react'
 import { Link, Switch, Route } from 'react-router-dom'
+import styles from './WritingSamples.module.css'
+import 'pure-react-carousel/dist/react-carousel.es.css'
 // import FeatureGuidesCarousel from './FeatureGuidesCarousel/FeatureGuidesCarousel'
 import FeatureGuides from './FeatureGuides/FeatureGuides'
 import PhotoEssays from './PhotoEssays/PhotoEssays'
 import AppCuration from './AppCuration/AppCuration'
 import VenueWriteUps from './VenueWriteUps/VenueWriteUps'
 import Interviews from './Interviews/Interviews'
-import 'pure-react-carousel/dist/react-carousel.es.css'
-import '../../../App.css'
+// import '../../../App.css'
 
 export default class WritingSamples extends Component {
   state = { visible: false }
@@ -25,8 +26,8 @@ export default class WritingSamples extends Component {
     return (
       <Route path='/writing_samples' render={() =>
         <Transition visible={visible} animation='fade' duration={800}>
-          <div className='samples-container'>
-            <div className='samples-text'>
+          <div className={styles['samples-container']}>
+            <div className={styles['samples-text']}>
               <h1 style={{fontFamily: 'Comfortaa'}}>Here are some writing samples</h1>
               <h2 style={{fontFamily: 'Comfortaa'}}>Porter & Sail</h2>
               <h2>Hotel Photo Gallery Essays</h2>

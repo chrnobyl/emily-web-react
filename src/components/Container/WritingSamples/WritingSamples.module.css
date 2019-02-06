@@ -1,0 +1,21 @@
+.samples-container {
+  text-align: center;
+  font-size: large;
+  padding-left: 10em;
+  padding-right: 10em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  min-height: 80vh;
+  font-family: var(--main-font);
+  background-color: #FEDCD2;
+}
+
+.samples-text {
+  text-align: center;
+  max-width: 50%;
+  font-size: large;
+  color: #DF744A;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+}

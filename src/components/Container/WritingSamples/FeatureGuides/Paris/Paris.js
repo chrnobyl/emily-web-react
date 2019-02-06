@@ -2,9 +2,10 @@ import React, { Component } from 'react'
 import { Modal, Header } from 'semantic-ui-react'
 import ImageCarousel from '../../ImageCarousel'
 
-const parisImages = ['lisbon_1', 'lisbon_2', 'lisbon_3', 'lisbon_4', 'lisbon_5',
-                'lisbon_6', 'lisbon_7', 'lisbon_8', 'lisbon_9', 'lisbon_10',
-                'lisbon_11']
+const parisImages = ['paris_1', 'paris_2', 'paris_3', 'paris_4',
+                     'paris_5', 'paris_6', 'paris_7', 'paris_8',
+                     'paris_9', 'paris_10', 'paris_11', 'paris_12'
+                    ]
 
 const Paris = (props) => {
   return (
