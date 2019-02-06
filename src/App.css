@@ -93,7 +93,7 @@ body {
   padding-top: 2em;
 } */
 
-.intro {
+/* .intro {
   grid-area: header;
   text-align: center;
   font-size: large;
@@ -105,7 +105,7 @@ body {
   background-color: #FEDCD2;
   font-family: var(--main-font);
   height: 10rem;
-}
+} */
 
 .bio {
   text-align: left;
@@ -189,7 +189,7 @@ body {
   font-family: var(--main-font);
 }
 
-.travel-pic {
+/* .travel-pic {
   grid-area: left-pic;
   float: left;
   width: 100%;
@@ -206,13 +206,13 @@ body {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
-}
+} */
 
 .pic {
   float: right;
 }
 
-.home-grid {
+/* .home-grid {
   display: grid;
   height: 100%;
   grid-column-gap: 0;
@@ -224,7 +224,7 @@ body {
     'left-pic left-desc left-desc right-pic right-desc right-desc'
     'logo logo logo logo logo logo'
     'work-together work-together work-together work-pic work-pic work-pic'
-}
+} */
 
 .logo-grid {
   display: grid;
@@ -410,14 +410,14 @@ body {
   background-color: #8FD8D2;
 }
 
-.work-pic {
+/* .work-pic {
   grid-area: work-pic;
   width: 100%;
   background-image: url(go_get_em.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
-}
+} */
 
 /* .footer {
   position: relative;
