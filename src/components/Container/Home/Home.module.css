@@ -1,0 +1,55 @@
+.home-grid {
+  display: grid;
+  height: 100%;
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+  grid-template-rows: 10em 50em 30em 50em;
+  grid-template-columns: 30em auto auto 30em auto auto;
+  grid-template-areas:
+    'header header header header header header'
+    'left-pic left-desc left-desc right-pic right-desc right-desc'
+    'logo logo logo logo logo logo'
+    'work-together work-together work-together work-pic work-pic work-pic'
+}
+
+.intro {
+  grid-area: header;
+  text-align: center;
+  font-size: large;
+  color: #DF744A;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-top: 4rem;
+  padding-bottom: 5rem;
+  background-color: #FEDCD2;
+  font-family: var(--main-font);
+  height: 10rem;
+}
+
+.travel-pic {
+  grid-area: left-pic;
+  float: left;
+  width: 100%;
+  background-image: url('./em_azores.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.lifestyle-pic {
+  grid-area: right-pic;
+  width: 100%;
+  background-image: url('./em_food.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.work-pic {
+  grid-area: work-pic;
+  width: 100%;
+  background-image: url('./go_get_em.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
