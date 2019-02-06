@@ -1,50 +1,27 @@
 import React, { Component } from 'react'
 import { List, Modal, Header } from 'semantic-ui-react'
-import InterviewsCarousel from './InterviewsCarousel/InterviewsCarousel'
-import '../../../../App.css'
+import ImageCarousel from '../ImageCarousel'
+import Sample from '../Sample'
+import * as Constants from '../imageNames'
+// import '../../../../App.css'
 
 const Interviews = (props) => {
   return (
     <List size='medium' relaxed>
       <List.Item>
-        <Modal trigger={<a>Masi Oka Profile (Tokyo)</a>} basic>
-          <Header content='Masi Oka Profile (Tokyo)' />
-          <Modal.Content>
-            <InterviewsCarousel className='carousel'/>
-          </Modal.Content>
-        </Modal>
+        <Sample title={'Masi Oka Profile (Tokyo)'} images={Constants.gdanskImages}/>
       </List.Item>
       <List.Item>
-        <Modal trigger={<a>Stellan Skarsgård Profile (Stockholm)</a>} basic>
-          <Header content='Stellan Skarsgård Profile (Stockholm)' />
-          <Modal.Content>
-            <InterviewsCarousel className='carousel'/>
-          </Modal.Content>
-        </Modal>
+        <Sample title={'Stellan Skarsgård Profile (Stockholm)'} images={Constants.gdanskImages} extension={'.JPG'}/>
       </List.Item>
       <List.Item>
-        <Modal trigger={<a>Steve Zahn Profile (Lexington)</a>} basic>
-          <Header content='Steve Zahn Profile (Lexington)' />
-          <Modal.Content>
-            <InterviewsCarousel className='carousel'/>
-          </Modal.Content>
-        </Modal>
+        <Sample title={'Steve Zahn Profile (Lexington)'} images={Constants.gdanskImages} extension={'.JPG'}/>
       </List.Item>
       <List.Item>
-        <Modal trigger={<a>Flower Power (Poznan)</a>} basic>
-          <Header content='Flower Power (Poznan)' />
-          <Modal.Content>
-            <InterviewsCarousel className='carousel'/>
-          </Modal.Content>
-        </Modal>
+        <Sample title={'Flower Power (Poznan)'} images={Constants.gdanskImages} extension={'.JPG'}/>
       </List.Item>
       <List.Item>
-        <Modal trigger={<a>Style Secrets of the French (Paris)</a>} basic>
-          <Header content='Style Secrets of the French (Paris)' />
-          <Modal.Content>
-            <InterviewsCarousel className='carousel'/>
-          </Modal.Content>
-        </Modal>
+        <Sample title={'Style Secrets of the French (Paris)'} images={Constants.gdanskImages} extension={'.JPG'}/>
       </List.Item>
     </List>
   )
