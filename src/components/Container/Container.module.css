@@ -1,0 +1,45 @@
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 812px) {
+  [class*="container"] {
+     min-height: 400px;
+     margin-bottom: 100px;
+     padding-bottom: 100px;
+     clear: both;
+  }
+
+  h1 { font-size: 16pt !important; }
+  h2 { font-size: 14pt !important; }
+  h3 { font-size: 12pt !important; }
+
+}
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  [class*="container"] {
+     min-height: 400px;
+     margin-bottom: 100px;
+     padding-bottom: 100px;
+     clear: both;
+  }
+
+  h1 { font-size: 16pt !important; }
+  h2 { font-size: 14pt !important; }
+  h3 { font-size: 12pt !important; }
+
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+
+  h1 { font-size: 20pt !important; }
+  h2 { font-size: 18pt !important; }
+  h3 { font-size: 16pt !important; }
+
+}
