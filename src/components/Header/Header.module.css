@@ -2,6 +2,10 @@
   font-family: var(--main-font);
 }
 
+h1 {
+  font-family: var(--main-font);
+}
+
 .header {
   text-align: center;
   font-size: large;
