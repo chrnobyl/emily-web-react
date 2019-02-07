@@ -177,7 +177,7 @@ body, h1, h2, h3 {
   font-family: var(--main-font);
 } */
 
-.lifestyle {
+/* .lifestyle {
   grid-area: right-desc;
   float: right;
   text-align: left;
@@ -187,7 +187,7 @@ body, h1, h2, h3 {
   padding-top: 4em;
   padding-bottom: 2em;
   font-family: var(--main-font);
-}
+} */
 
 /* .travel-pic {
   grid-area: left-pic;
