@@ -8,3 +8,50 @@
   min-height: 80vh;
   font-family: 'Comfortaa';
 }
+
+.bio {
+  text-align: left;
+  float: left;
+  font-size: large;
+  padding-left: 4em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  width: 50%;
+  position: relative;
+  font-family: var(--main-font);
+}
+
+.about-grid {
+  display: grid;
+  height: 100%;
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+  grid-template-rows: 50em;
+  grid-template-columns: 50% 50%;
+  grid-template-areas:
+    'abt-text pic'
+}
+
+.about-text {
+  grid-area: abt-text;
+  float: left;
+  text-align: center;
+  font-size: large;
+  font-family: var(--main-font);
+  font-weight: bolder;
+  color: #DF744A;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 15em;
+  padding-bottom: 2em;
+  background-color: #8FD8D2;
+}
+
+.about-pic {
+  grid-area: pic;
+  width: 100%;
+  background-image: url(em_bowie.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}

@@ -1,35 +1,77 @@
 import React, { Component } from 'react'
-import { Image } from 'semantic-ui-react'
+import { Image, Transition } from 'semantic-ui-react'
 import styles from './Logos.module.css'
 
-const Logos = (props) => {
-  return (
-    <div className={styles['logo-grid']}>
-      <div className={styles['logo-intro']}>
-        I've written for these companies:
-      </div>
-      <div className={styles['redfin']} onClick={()=> window.open('https://www.redfin.com/blog/author/emily-hochbergredfin-com', '_blank')}>
-      </div>
-      <div className={styles['mtv']} onClick={()=> window.open('http://www.mtv.com/news/author/emilyhochberg/', '_blank')}>
-      </div>
-      <div className={styles['jerusalem-post']}>
-      </div>
-      <div className={styles['grey']}>
-      </div>
-      <div className={styles['xfinity']} onClick={()=> window.open('https://es.xfinity.com/sdmy/blogs/tv/author/emilyhochberg/page/1/', '_blank')}>
-      </div>
-      <div className={styles['portersail']}>
-      </div>
-      <div className={styles['fabfitfun']}>
-      </div>
-      <div className={styles['secret-escapes']}>
-      </div>
-      <div className={styles['people']}>
-      </div>
-      <div className={styles['buzzfeed']}>
-      </div>
-    </div>
-  )
-}
+export default class Logos extends Component {
+  state = { visible: false }
 
-export default Logos
+  toggleVisibility = () => this.setState({ visible: !this.state.visible })
+
+  componentDidMount() {
+    this.toggleVisibility()
+  }
+
+  render() {
+    const { visible } = this.state
+
+    return (
+      <div className={styles['logo-grid']}>
+        <Transition visible={visible} animation='fade' duration={800}>
+          <div className={styles['logo-intro']}>
+            I've written for these companies:
+          </div>
+        </Transition>
+
+        <Transition visible={visible} animation='fade' duration={800}>
+          <div className={styles['redfin']} onClick={()=> window.open('https://www.redfin.com/blog/author/emily-hochbergredfin-com', '_blank')}>
+          </div>
+        </Transition>
+
+        <Transition visible={visible} animation='fade' duration={800}>
+          <div className={styles['mtv']} onClick={()=> window.open('http://www.mtv.com/news/author/emilyhochberg/', '_blank')}>
+          </div>
+        </Transition>
+
+        <Transition visible={visible} animation='fade' duration={800}>
+          <div className={styles['jerusalem-post']}>
+          </div>
+        </Transition>
+
+        <Transition visible={visible} animation='fade' duration={800}>
+          <div className={styles['grey']}>
+          </div>
+        </Transition>
+
+        <Transition visible={visible} animation='fade' duration={800}>
+          <div className={styles['xfinity']} onClick={()=> window.open('https://es.xfinity.com/sdmy/blogs/tv/author/emilyhochberg/page/1/', '_blank')}>
+          </div>
+        </Transition>
+
+        <Transition visible={visible} animation='fade' duration={800}>
+          <div className={styles['portersail']}>
+          </div>
+        </Transition>
+
+        <Transition visible={visible} animation='fade' duration={800}>
+          <div className={styles['fabfitfun']}>
+          </div>
+        </Transition>
+
+        <Transition visible={visible} animation='fade' duration={800}>
+          <div className={styles['secret-escapes']}>
+          </div>
+        </Transition>
+
+        <Transition visible={visible} animation='fade' duration={800}>
+          <div className={styles['people']}>
+          </div>
+        </Transition>
+        
+        <Transition visible={visible} animation='fade' duration={800}>
+          <div className={styles['buzzfeed']}>
+          </div>
+        </Transition>
+      </div>
+    )
+  }
+}
