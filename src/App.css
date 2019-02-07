@@ -48,6 +48,63 @@ body, h1, h2, h3 {
   font-family: var(--main-font);
 }
 
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 812px) {
+  [class*="image"] {
+    float: none;
+    display: table;
+    margin: 0 auto;
+    border-radius: 50%;
+    padding-left: 0em;
+    padding-right: 0em;
+    padding-top: 0em;
+    padding-bottom: 0em;
+    max-width: 15em;
+  }
+
+  [class*="about"] {
+    text-align: left;
+    font-size: 11pt;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0em;
+    padding-bottom: 2em;
+  }
+
+  [class*="block"] {
+    text-align: left;
+    font-size: 11pt;
+    padding-left: 1em;
+    padding-right: 0em;
+    padding-top: 1em;
+    padding-bottom: 2em;
+  }
+
+  /* [class*="footer"] {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 50%;
+    width: 100%;
+  } */
+
+  [class*="container"] {
+     min-height: 400px;
+     margin-bottom: 100px;
+     padding-bottom: 100px;
+     clear: both;
+  }
+
+  h1 { font-size: 16pt !important; }
+  h2 { font-size: 14pt !important; }
+  h3 { font-size: 12pt !important; }
+
+}
+
 /* .samples-container {
   text-align: center;
   font-size: large;
@@ -107,7 +164,7 @@ body, h1, h2, h3 {
   height: 10rem;
 } */
 
-.bio {
+/* .bio {
   text-align: left;
   float: left;
   font-size: large;
@@ -152,7 +209,7 @@ body, h1, h2, h3 {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
-}
+} */
 
 /* .mid {
   width: 100%;
