@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { List, Modal, Header } from 'semantic-ui-react'
-import Sample from '../Sample'
-import ImageCarousel from '../ImageCarousel'
+import Sample from '../Sample/Sample'
+// import ImageCarousel from '../ImageCarousel'
 import * as Constants from '../imageNames'
 
 const FeatureGuides = (props) => {

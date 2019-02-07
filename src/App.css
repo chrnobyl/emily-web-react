@@ -28,12 +28,12 @@
 
 @import url('https://fonts.googleapis.com/css?family=Comfortaa');
 
-.carousel {
+/* .carousel {
   width: 45%;
   margin: 0 auto;
-}
+} */
 
-body {
+body, h1, h2, h3 {
   font-family: 'Comfortaa';
 }
 
@@ -76,22 +76,22 @@ body {
 
 /* .nav {
   font-family: var(--main-font);
-}
+} */
 
-.header {
+/* .header {
   text-align: center;
   font-size: large;
   padding-left: 10em;
   padding-right: 10em;
   padding-top: 6em;
   padding-bottom: 3em;
-}
+} */
 
 .icons {
   float: right;
   padding-right: 4em;
   padding-top: 2em;
-} */
+}
 
 /* .intro {
   grid-area: header;

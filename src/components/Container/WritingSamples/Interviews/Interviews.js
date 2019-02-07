@@ -1,9 +1,7 @@
 import React, { Component } from 'react'
 import { List, Modal, Header } from 'semantic-ui-react'
-import ImageCarousel from '../ImageCarousel'
-import Sample from '../Sample'
+import Sample from '../Sample/Sample'
 import * as Constants from '../imageNames'
-// import '../../../../App.css'
 
 const Interviews = (props) => {
   return (
@@ -18,10 +16,10 @@ const Interviews = (props) => {
         <Sample title={'Steve Zahn Profile (Lexington)'} images={Constants.steveZahnImages} extension={'.PNG'}/>
       </List.Item>
       <List.Item>
-        <Sample title={'Flower Power (Poznan)'} images={Constants.flowerPowerImages} extension={'.PNG'}/>
+        <Sample title={'Flower Power (Poznan)'} images={Constants.flowerPowerImages} extension={'.png'}/>
       </List.Item>
       <List.Item>
-        <Sample title={'Style Secrets of the French (Paris)'} images={Constants.styleSecretsImages} extension={'.PNG'}/>
+        <Sample title={'Style Secrets of the French (Paris)'} images={Constants.styleSecretsImages} extension={'.png'}/>
       </List.Item>
     </List>
   )
