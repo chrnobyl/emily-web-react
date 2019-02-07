@@ -1,5 +1,5 @@
 .lifestyle {
-  grid-area: right-desc;
+  grid-area: lifestyle-desc;
   float: right;
   text-align: left;
   font-size: large;
@@ -13,8 +13,8 @@
 @media (min-width: 481px) and (max-width: 812px) {
 
   [class*="lifestyle"] {
-    grid-area: right-desc;
-    /* float: left; */
+    grid-area: lifestyle-desc;
+    float: left;
     text-align: left;
     font-size: 9pt;
     padding-left: 1em;
@@ -38,8 +38,8 @@
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
 
   [class*="lifestyle"] {
-    grid-area: right-desc;
-    /* float: left; */
+    grid-area: lifestyle-desc;
+    float: left;
     /* text-align: left; */
     font-size: 9pt;
     padding-left: 1em;
@@ -58,7 +58,7 @@
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
 
   [class*="lifestyle"] {
-    grid-area: right-desc;
+    grid-area: lifestyle-desc;
     /* float: left; */
     text-align: left;
     font-size: 9pt;

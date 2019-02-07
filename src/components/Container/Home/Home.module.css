@@ -7,7 +7,7 @@
   grid-template-columns: 30em auto auto 30em auto auto;
   grid-template-areas:
     'header header header header header header'
-    'left-pic left-desc left-desc right-pic right-desc right-desc'
+    'travel-pic travel-desc travel-desc lifestyle-pic lifestyle-desc lifestyle-desc'
     'logo logo logo logo logo logo'
     'work-together work-together work-together work-pic work-pic work-pic'
 }
@@ -27,7 +27,7 @@
 }
 
 .travel-pic {
-  grid-area: left-pic;
+  grid-area: travel-pic;
   float: left;
   width: 100%;
   background-image: url('./em_azores.jpg');
@@ -37,7 +37,7 @@
 }
 
 .lifestyle-pic {
-  grid-area: right-pic;
+  grid-area: lifestyle-pic;
   width: 100%;
   background-image: url('./em_food.jpg');
   background-repeat: no-repeat;
@@ -118,14 +118,15 @@
     grid-template-columns: 50vw 50vw;
     grid-template-areas:
       'header'
-      'left-pic left-desc'
-      'right-desc right-pic'
+      'travel-pic travel-desc'
+      'lifestyle-desc lifestyle-pic'
       'logo'
+      'work-together work-pic'
       'work-together work-pic'
   }
 
   [class*="travel-pic"] {
-    grid-area: left-pic;
+    grid-area: travel-pic;
     width: 50vw;
     background-image: url('./em_azores.jpg');
     background-repeat: no-repeat;
@@ -134,8 +135,9 @@
   }
 
   [class*="lifestyle-pic"] {
-    grid-area: right-pic;
+    grid-area: lifestyle-pic;
     width: 50vw;
+    position: relative;
     background-image: url('./em_food.jpg');
     background-repeat: no-repeat;
     background-position: 50% 50%;
