@@ -12,3 +12,78 @@
   padding-bottom: 2em;
   background-color: #8FD8D2;
 }
+
+
+@media (min-width: 481px) and (max-width: 812px) {
+
+  [class*="work-together"] {
+    grid-area: work-together;
+    float: left;
+    text-align: center;
+    font-size: large;
+    font-family: var(--main-font);
+    font-weight: bolder;
+    color: #DF744A;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 15em;
+    padding-bottom: 2em;
+    background-color: #8FD8D2;
+  }
+
+  h1 { font-size: 16pt !important; }
+  h2 { font-size: 14pt !important; }
+  h3 { font-size: 12pt !important; }
+
+}
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+
+  [class*="work-together"] {
+    grid-area: work-together;
+    float: left;
+    text-align: center;
+    font-size: large;
+    font-family: var(--main-font);
+    font-weight: bolder;
+    color: #DF744A;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 15em;
+    padding-bottom: 2em;
+    background-color: #8FD8D2;
+  }
+
+  h1 { font-size: 10pt !important; }
+  h2 { font-size: 10pt !important; }
+  h3 { font-size: 10pt !important; }
+
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+
+  [class*="work-together"] {
+    grid-area: work-together;
+    float: left;
+    text-align: center;
+    font-size: large;
+    font-family: var(--main-font);
+    font-weight: bolder;
+    color: #DF744A;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 15em;
+    padding-bottom: 2em;
+    background-color: #8FD8D2;
+  }
+
+  h1 { font-size: 13pt !important; }
+  h2 { font-size: 11pt !important; }
+  h3 { font-size: 10pt !important; }
+
+}
