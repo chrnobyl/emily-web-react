@@ -8,7 +8,6 @@ import PhotoEssays from './PhotoEssays/PhotoEssays'
 import AppCuration from './AppCuration/AppCuration'
 import VenueWriteUps from './VenueWriteUps/VenueWriteUps'
 import Interviews from './Interviews/Interviews'
-// import '../../../App.css'
 
 export default class WritingSamples extends Component {
   state = { visible: false }
