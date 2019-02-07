@@ -1,0 +1,14 @@
+.work-together {
+  grid-area: work-together;
+  float: left;
+  text-align: center;
+  font-size: large;
+  font-family: var(--main-font);
+  font-weight: bolder;
+  color: #DF744A;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 15em;
+  padding-bottom: 2em;
+  background-color: #8FD8D2;
+}
