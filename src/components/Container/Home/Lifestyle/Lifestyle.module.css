@@ -13,14 +13,14 @@
 @media (min-width: 481px) and (max-width: 812px) {
 
   [class*="lifestyle"] {
-    grid-area: left-desc;
-    float: left;
+    grid-area: right-desc;
+    /* float: left; */
     text-align: left;
-    font-size: large;
-    padding-left: 2em;
-    padding-right: 2em;
-    padding-top: 4em;
-    padding-bottom: 2em;
+    font-size: 9pt;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
+    padding-bottom: 0em;
     font-family: var(--main-font);
   }
 
@@ -38,13 +38,13 @@
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
 
   [class*="lifestyle"] {
-    grid-area: left-desc;
+    grid-area: right-desc;
     /* float: left; */
-    /* text-align: left; */
-    font-size: 8pt;
-    padding-left: 0em;
-    padding-right: 0em;
-    padding-top: 0em;
+    text-align: left;
+    font-size: 9pt;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
     padding-bottom: 0em;
     font-family: var(--main-font);
   }
@@ -58,13 +58,13 @@
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
 
   [class*="lifestyle"] {
-    grid-area: left-desc;
+    grid-area: right-desc;
     /* float: left; */
     text-align: left;
-    font-size: 8pt;
-    padding-left: 0em;
-    padding-right: 0em;
-    padding-top: 0em;
+    font-size: 9pt;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
     padding-bottom: 0em;
     font-family: var(--main-font);
   }
