@@ -40,7 +40,7 @@
   [class*="lifestyle"] {
     grid-area: right-desc;
     /* float: left; */
-    text-align: left;
+    /* text-align: left; */
     font-size: 9pt;
     padding-left: 1em;
     padding-right: 1em;

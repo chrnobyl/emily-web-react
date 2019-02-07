@@ -114,12 +114,12 @@
     max-width: 100vw;
     grid-column-gap: 0;
     grid-row-gap: 0;
-    grid-template-rows: 8em 30em 30em 30em 10em;
+    grid-template-rows: 8em 50em 50em 30em 10em;
     grid-template-columns: 50vw 50vw;
     grid-template-areas:
       'header'
       'left-pic left-desc'
-      'right-desc right-pic '
+      'right-desc right-pic'
       'logo'
       'work-together work-pic'
   }
@@ -127,7 +127,6 @@
   [class*="travel-pic"] {
     grid-area: left-pic;
     width: 50vw;
-    font-size: 8pt;
     background-image: url('./em_azores.jpg');
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -137,7 +136,6 @@
   [class*="lifestyle-pic"] {
     grid-area: right-pic;
     width: 50vw;
-    font-size: 8pt;
     background-image: url('./em_food.jpg');
     background-repeat: no-repeat;
     background-position: 50% 50%;
