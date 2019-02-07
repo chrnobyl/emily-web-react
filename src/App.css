@@ -54,17 +54,6 @@ body, h1, h2, h3 {
 */
 
 @media (min-width: 481px) and (max-width: 812px) {
-  [class*="image"] {
-    float: none;
-    display: table;
-    margin: 0 auto;
-    border-radius: 50%;
-    padding-left: 0em;
-    padding-right: 0em;
-    padding-top: 0em;
-    padding-bottom: 0em;
-    max-width: 15em;
-  }
 
   [class*="about"] {
     text-align: left;
@@ -84,18 +73,10 @@ body, h1, h2, h3 {
     padding-bottom: 2em;
   }
 
-  /* [class*="footer"] {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    height: 50%;
-    width: 100%;
-  } */
-
   [class*="container"] {
      min-height: 400px;
-     margin-bottom: 100px;
-     padding-bottom: 100px;
+     /* margin-bottom: 100px; */
+     /* padding-bottom: 100px; */
      clear: both;
   }
 
