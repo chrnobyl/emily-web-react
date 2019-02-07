@@ -1,0 +1,168 @@
+.logo-grid {
+  display: grid;
+  grid-area: logo;
+  width: 100%;
+  grid-column-gap: 1em;
+  grid-row-gap: 0;
+  grid-template-rows: 10em 5em 10em;
+  grid-template-columns: repeat(10em);
+  grid-template-areas:
+    'logo-header'
+    'description'
+    'logo';
+}
+
+.logo-intro {
+  grid-area: logo-header;
+  text-align: center;
+  font-size: large;
+  color: #DF744A;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-top: 4rem;
+  padding-bottom: 7rem;
+  background-color: #FEDCD2;
+  font-family: var(--main-font);
+  grid-column-start: 1;
+  grid-column-end: 11;
+  grid-row-start: auto;
+}
+
+.logo-description {
+  grid-area: description;
+  text-align: center;
+  font-size: large;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-family: var(--main-font);
+  grid-column-start: 1;
+  grid-column-end: 11;
+  grid-row: 2;
+}
+
+.redfin {
+  grid-area: logo;
+  grid-column: 1;
+  grid-row: 3;
+  padding-left: 3em;
+  max-height:100%;
+  width: 100%;
+  background-image: url(./images/redfin.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.people {
+  grid-area: logo;
+  grid-column: 2;
+  grid-row: 3;
+  max-height:100%;
+  width: 100%;
+  background-image: url(./images/peoplemag.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+}
+
+.xfinity {
+  grid-area: logo;
+  grid-column: 3;
+  grid-row: 3;
+  max-height:100%;
+  width: 100%;
+  background-image: url(./images/xfinity.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.buzzfeed {
+  grid-area: logo;
+  grid-column: 4;
+  grid-row: 3;
+  max-height:100%;
+  width: 100%;
+  background-image: url(./images/buzzfeed.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+}
+
+.grey {
+  grid-area: logo;
+  grid-column: 5;
+  grid-row: 3;
+  max-height:100%;
+  width: 100%;
+  background-image: url(./images/grey.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+}
+
+.portersail {
+  grid-area: logo;
+  grid-column: 6;
+  grid-row: 3;
+  max-height:100%;
+  width: 100%;
+  background-image: url(./images/portersail.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+}
+
+.fabfitfun {
+  grid-area: logo;
+  grid-column: 7;
+  grid-row: 3;
+  max-height:100%;
+  width: 100%;
+  background-image: url(./images/fabfitfun.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+}
+
+.mtv {
+  grid-area: logo;
+  grid-column: 8;
+  grid-row: 3;
+  max-height:100%;
+  width: 100%;
+  background-image: url(./images/mtv.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.jerusalem-post {
+  grid-area: logo;
+  grid-column: 9;
+  grid-row: 3;
+  max-height:100%;
+  width: 100%;
+  background-image: url(./images/jerusalempost.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+}
+
+.secret-escapes {
+  grid-area: logo;
+  grid-column: 10;
+  grid-row: 3;
+  padding-right: 2em;
+  max-height:100%;
+  width: 100%;
+  background-image: url(./images/secretescapes.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+}

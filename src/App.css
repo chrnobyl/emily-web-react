@@ -87,11 +87,11 @@ body, h1, h2, h3 {
   padding-bottom: 3em;
 } */
 
-.icons {
+/* .icons {
   float: right;
   padding-right: 4em;
   padding-top: 2em;
-}
+} */
 
 /* .intro {
   grid-area: header;
@@ -165,7 +165,7 @@ body, h1, h2, h3 {
   position: relative;
 }
 
-.travel-guides {
+/* .travel-guides {
   grid-area: left-desc;
   float: left;
   text-align: left;
@@ -175,7 +175,7 @@ body, h1, h2, h3 {
   padding-top: 4em;
   padding-bottom: 2em;
   font-family: var(--main-font);
-}
+} */
 
 .lifestyle {
   grid-area: right-desc;
@@ -226,7 +226,7 @@ body, h1, h2, h3 {
     'work-together work-together work-together work-pic work-pic work-pic'
 } */
 
-.logo-grid {
+/* .logo-grid {
   display: grid;
   grid-area: logo;
   width: 100%;
@@ -238,9 +238,9 @@ body, h1, h2, h3 {
     'logo-header'
     'description'
     'logo';
-}
+} */
 
-.logo-intro {
+/* .logo-intro {
   grid-area: logo-header;
   text-align: center;
   font-size: large;
@@ -254,9 +254,9 @@ body, h1, h2, h3 {
   grid-column-start: 1;
   grid-column-end: 11;
   grid-row-start: auto;
-}
+} */
 
-.logo-description {
+/* .logo-description {
   grid-area: description;
   text-align: center;
   font-size: large;
@@ -268,9 +268,9 @@ body, h1, h2, h3 {
   grid-column-start: 1;
   grid-column-end: 11;
   grid-row: 2;
-}
+} */
 
-.redfin {
+/* .redfin {
   grid-area: logo;
   grid-column: 1;
   grid-row: 3;
@@ -393,9 +393,9 @@ body, h1, h2, h3 {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: contain;
-}
+} */
 
-.work-together {
+/* .work-together {
   grid-area: work-together;
   float: left;
   text-align: center;
@@ -408,7 +408,7 @@ body, h1, h2, h3 {
   padding-top: 15em;
   padding-bottom: 2em;
   background-color: #8FD8D2;
-}
+} */
 
 /* .work-pic {
   grid-area: work-pic;

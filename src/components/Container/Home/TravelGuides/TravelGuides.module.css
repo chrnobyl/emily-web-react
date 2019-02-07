@@ -1,0 +1,11 @@
+.travel-guides {
+  grid-area: left-desc;
+  float: left;
+  text-align: left;
+  font-size: large;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 4em;
+  padding-bottom: 2em;
+  font-family: var(--main-font);
+}

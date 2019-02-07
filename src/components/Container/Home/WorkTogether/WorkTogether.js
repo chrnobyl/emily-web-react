@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import { Button } from 'semantic-ui-react'
-import '../../../../App.css'
+import styles from './WorkTogether.module.css'
 
 const WorkTogether = (props) => {
   return (
-    <div className='work-together'>
+    <div className={styles['work-together']}>
       <p>
         Let's work together! Drop me a line and I'll see what I can do for you.
       </p>

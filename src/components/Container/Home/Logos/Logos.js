@@ -1,32 +1,32 @@
 import React, { Component } from 'react'
 import { Image } from 'semantic-ui-react'
-import '../../../../App.css';
+import styles from './Logos.module.css'
 
 const Logos = (props) => {
   return (
-    <div className='logo-grid'>
-      <div className='logo-intro'>
+    <div className={styles['logo-grid']}>
+      <div className={styles['logo-intro']}>
         I've written for these companies:
       </div>
-      <div className='redfin' onClick={()=> window.open('https://www.redfin.com/blog/author/emily-hochbergredfin-com', '_blank')}>
+      <div className={styles['redfin']} onClick={()=> window.open('https://www.redfin.com/blog/author/emily-hochbergredfin-com', '_blank')}>
       </div>
-      <div className='mtv' onClick={()=> window.open('http://www.mtv.com/news/author/emilyhochberg/', '_blank')}>
+      <div className={styles['mtv']} onClick={()=> window.open('http://www.mtv.com/news/author/emilyhochberg/', '_blank')}>
       </div>
-      <div className='jerusalem-post'>
+      <div className={styles['jerusalem-post']}>
       </div>
-      <div className='grey'>
+      <div className={styles['grey']}>
       </div>
-      <div className='xfinity' onClick={()=> window.open('https://es.xfinity.com/sdmy/blogs/tv/author/emilyhochberg/page/1/', '_blank')}>
+      <div className={styles['xfinity']} onClick={()=> window.open('https://es.xfinity.com/sdmy/blogs/tv/author/emilyhochberg/page/1/', '_blank')}>
       </div>
-      <div className='portersail'>
+      <div className={styles['portersail']}>
       </div>
-      <div className='fabfitfun'>
+      <div className={styles['fabfitfun']}>
       </div>
-      <div className='secret-escapes'>
+      <div className={styles['secret-escapes']}>
       </div>
-      <div className='people'>
+      <div className={styles['people']}>
       </div>
-      <div className='buzzfeed'>
+      <div className={styles['buzzfeed']}>
       </div>
     </div>
   )
