@@ -6,7 +6,8 @@ import CustomDotGroup from '../CustomDotGroup/CustomDotGroup'
 
 const ImageCarousel = (props) => (
   <CarouselProvider className={styles['carousel']} naturalSlideWidth={1} naturalSlideHeight={2} totalSlides={props.images.length}>
-  {console.log(props.location)}
+  {console.log(`../${props.location}/${props.images[0] + props.extension}`)}
+
     <Slider>
       {
         props.images.map((name, index) => (
