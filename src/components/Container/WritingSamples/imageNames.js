@@ -69,3 +69,7 @@ export const steveZahnImages = [
 export const styleSecretsImages = [
                                   'styleSecrets_1', 'styleSecrets_2', 'styleSecrets_3', 'styleSecrets_4', 'styleSecrets_5', 'styleSecrets_6', 'styleSecrets_7', 'styleSecrets_8', 'styleSecrets_9', 'styleSecrets_10', 'styleSecrets_11', 'styleSecrets_12', 'styleSecrets_13', 'styleSecrets_14', 'styleSecrets_15'
                                 ]
+
+export const fabFitFun = [
+                            'fff_secret_starbucks_1', 'fff_secret_starbucks_2', 'fff_secret_starbucks_3'
+                        ]
