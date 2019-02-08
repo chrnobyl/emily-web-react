@@ -8,6 +8,7 @@ import PhotoEssays from './PhotoEssays/PhotoEssays'
 import AppCuration from './AppCuration/AppCuration'
 import VenueWriteUps from './VenueWriteUps/VenueWriteUps'
 import Interviews from './Interviews/Interviews'
+import SecretEscapes from './SecretEscapes/SecretEscapes'
 
 export default class WritingSamples extends Component {
   state = { visible: false }
@@ -38,6 +39,8 @@ export default class WritingSamples extends Component {
               <VenueWriteUps />
               <h2>Interviews</h2>
               <Interviews />
+              <h2 style={{fontFamily: 'Comfortaa'}}>Secret Escapes</h2>
+              <SecretEscapes />
             </div>
           </div>
         </Transition>
