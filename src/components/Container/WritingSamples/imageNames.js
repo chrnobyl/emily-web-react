@@ -55,8 +55,8 @@ export const flowerPowerImages = [
                               ]
 
 export const masiOkaImages = [
-                        'masiOka_1', 'masiOka_2', 'masiOka_3', 'masiOka_4', 'masiOka_5', 'masiOka_6', 'masiOka_7', 'masiOka_8', 'masiOka_9', 'masiOka_10'
-                        ]
+                              'masiOka_1', 'masiOka_2', 'masiOka_3', 'masiOka_4', 'masiOka_5', 'masiOka_6', 'masiOka_7', 'masiOka_8', 'masiOka_9', 'masiOka_10'
+                              ]
 
 export const stellanImages = [
                               'stellan_1', 'stellan_2', 'stellan_3', 'stellan_4', 'stellan_5', 'stellan_6'

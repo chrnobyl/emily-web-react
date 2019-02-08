@@ -10,7 +10,7 @@ import VenueWriteUps from '../VenueWriteUps/VenueWriteUps'
 import Interviews from '../Interviews/Interviews'
 import SecretEscapes from '../SecretEscapes/SecretEscapes'
 
-export default class Entertainment extends Component {
+export default class Lifestyle extends Component {
   state = { visible: false }
 
   toggleVisibility = () => this.setState({ visible: !this.state.visible })
@@ -23,11 +23,11 @@ export default class Entertainment extends Component {
     const { visible } = this.state
 
     return (
-      <Route path='/entertainment' render={() =>
+      <Route path='/lifestyle' render={() =>
         <Transition visible={visible} animation='fade' duration={800}>
           <div className={styles['samples-container']}>
             <div className={styles['samples-text']}>
-              <h1 style={{fontFamily: 'Comfortaa'}}>Here are some writing samples</h1>
+              <h1 style={{fontFamily: 'Comfortaa'}}>Here are some Lifestyle writing samples:</h1>
               <h2 style={{fontFamily: 'Comfortaa'}}>Porter & Sail</h2>
               <h2>Hotel Photo Gallery Essays</h2>
               <PhotoEssays />
