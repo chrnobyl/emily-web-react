@@ -3,7 +3,7 @@
   height: 100%;
   grid-column-gap: 0;
   grid-row-gap: 0;
-  grid-template-rows: 10em 50em 30em 50em;
+  grid-template-rows: 10em 50em 20em 50em;
   grid-template-columns: 30em auto auto 30em auto auto;
   grid-template-areas:
     'header header header header header header'
