@@ -41,6 +41,7 @@
     grid-area: lifestyle-desc;
     float: left;
     /* text-align: left; */
+    max-width: 50vw;
     font-size: 9pt;
     padding-left: 1em;
     padding-right: 1em;

@@ -34,14 +34,14 @@ export default class Home extends Component {
             </div>
           </Transition>
 
-          <TravelGuides />
+          <TravelGuides/>
 
           <Transition visible={visible} animation='fade' duration={1200}>
             <div className={styles['lifestyle-pic']}>
             </div>
           </Transition>
 
-          <Lifestyle />
+          <Lifestyle/>
 
           <Logos />
 

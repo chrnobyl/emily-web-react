@@ -4,11 +4,10 @@
   width: 100%;
   grid-column-gap: 1em;
   grid-row-gap: 0;
-  grid-template-rows: 10em 5em 10em;
+  grid-template-rows: 10em 10em;
   grid-template-columns: repeat(10em);
   grid-template-areas:
     'logo-header'
-    'description'
     'logo';
 }
 
@@ -202,7 +201,7 @@
     width: 100vw;
     grid-column-gap: 1em;
     grid-row-gap: 0;
-    grid-template-rows: 10em 5em 10em;
+    grid-template-rows: 1em 10em;
     grid-template-columns: repeat(10em);
     grid-template-areas:
       'logo-header'
