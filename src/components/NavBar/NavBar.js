@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import styles from './NavBar.module.css'
-import { Menu, Segment } from 'semantic-ui-react'
+import { Menu, Segment, Dropdown } from 'semantic-ui-react'
 
 export default class MenuExampleInvertedSecondary extends Component {
   state = { activeItem: 'home' }
@@ -27,13 +27,19 @@ export default class MenuExampleInvertedSecondary extends Component {
           onClick={this.handleItemClick}>
           <h3 className={styles['nav']}>About</h3>
         </Menu.Item>
-        <Menu.Item
+
+        <Dropdown className={styles['nav']} item text='Writing Samples'
           name='samples'
-          as={Link} to='/writing_samples'
           active={activeItem === 'samples'}
-          onClick={this.handleItemClick}>
-          <h3 className={styles['nav']}>Writing Samples</h3>
-        </Menu.Item>
+          onClick={this.handleItemClick}
+          >
+          <Dropdown.Menu>
+            <Dropdown.Item text='Travel' as={Link} to='/writing_samples'/>
+            <Dropdown.Item text='Lifestyle' as={Link} to='/lifestyle'/>
+            <Dropdown.Item text='Entertainment' as={Link} to='/Entertainment'/>
+          </Dropdown.Menu>
+        </Dropdown>
+
         <Menu.Item
           name='contact'
           as={Link} to='/contact'
