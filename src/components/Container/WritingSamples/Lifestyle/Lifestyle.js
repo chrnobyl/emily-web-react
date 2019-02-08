@@ -3,12 +3,9 @@ import { Transition, Segment, Header, List, Modal } from 'semantic-ui-react'
 import { Link, Switch, Route } from 'react-router-dom'
 import styles from '../WritingSamples.module.css'
 import 'pure-react-carousel/dist/react-carousel.es.css'
-import FeatureGuides from '../FeatureGuides/FeatureGuides'
-import PhotoEssays from '../PhotoEssays/PhotoEssays'
-import AppCuration from '../AppCuration/AppCuration'
-import VenueWriteUps from '../VenueWriteUps/VenueWriteUps'
-import Interviews from '../Interviews/Interviews'
-import SecretEscapes from '../SecretEscapes/SecretEscapes'
+import Buzzfeed from './Buzzfeed/Buzzfeed'
+import JerusalemPost from './JerusalemPost/JerusalemPost'
+import FabFitFun from './FabFitFun/FabFitFun'
 
 export default class Lifestyle extends Component {
   state = { visible: false }
@@ -28,19 +25,12 @@ export default class Lifestyle extends Component {
           <div className={styles['samples-container']}>
             <div className={styles['samples-text']}>
               <h1 style={{fontFamily: 'Comfortaa'}}>Here are some Lifestyle writing samples:</h1>
-              <h2 style={{fontFamily: 'Comfortaa'}}>Porter & Sail</h2>
-              <h2>Hotel Photo Gallery Essays</h2>
-              <PhotoEssays />
-              <h2>Feature Guides</h2>
-              <FeatureGuides />
-              <h2>App Curation</h2>
-              <AppCuration />
-              <h2>Venue Write Ups</h2>
-              <VenueWriteUps />
-              <h2>Interviews</h2>
-              <Interviews />
-              <h2 style={{fontFamily: 'Comfortaa'}}>Secret Escapes</h2>
-              <SecretEscapes />
+              <h2 style={{fontFamily: 'Comfortaa'}}>Buzzfeed</h2>
+              <Buzzfeed />
+              <h2 style={{fontFamily: 'Comfortaa'}}>JerusalemPost</h2>
+              <JerusalemPost />
+              <h2 style={{fontFamily: 'Comfortaa'}}>FabFitFun</h2>
+              <FabFitFun />
             </div>
           </div>
         </Transition>
