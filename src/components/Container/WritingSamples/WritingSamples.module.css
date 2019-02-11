@@ -20,6 +20,11 @@
   vertical-align: top;
 }
 
+.header {
+  font-family: 'Comfortaa';
+  cursor: pointer;
+}
+
 @media (min-width: 481px) and (max-width: 812px) {
 
   [class*="samples-container"] {

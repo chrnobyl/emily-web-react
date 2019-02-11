@@ -26,13 +26,13 @@ export default class Lifestyle extends Component {
           <div className={styles['samples-container']}>
             <div className={styles['samples-text']}>
               <h1 style={{fontFamily: 'Comfortaa'}}>Here are some Lifestyle writing samples:</h1>
-              <h2 style={{fontFamily: 'Comfortaa'}}>Buzzfeed</h2>
+              <h2 className={styles['header']} onClick={()=> window.open('https://www.buzzfeed.com/efh45', '_blank')}>Buzzfeed</h2>
               <Buzzfeed />
-              <h2 style={{fontFamily: 'Comfortaa'}}>JerusalemPost</h2>
+              <h2 style={{fontFamily: 'Comfortaa'}}>Jerusalem Post</h2>
               <JerusalemPost />
-              <h2 style={{fontFamily: 'Comfortaa'}}>FabFitFun</h2>
+              <h2 className={styles['header']} onClick={()=> window.open('https://fabfitfun.com/magazine/author/emily-hochberggmail-com/', '_blank')}>FabFitFun</h2>
               <FabFitFun />
-              <h2 style={{fontFamily: 'Comfortaa'}}>Redfin</h2>
+              <h2 className={styles['header']} onClick={()=> window.open('https://www.redfin.com/blog/author/emily-hochbergredfin-com', '_blank')}>Redfin</h2>
               <Redfin />
             </div>
           </div>
