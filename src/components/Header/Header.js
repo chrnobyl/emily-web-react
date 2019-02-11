@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styles from './Header.module.css'
-import { Item, Icon } from 'semantic-ui-react'
+import { Icon } from 'semantic-ui-react'
 import NavBar from '../NavBar/NavBar';
 
 const Header = (props) => {

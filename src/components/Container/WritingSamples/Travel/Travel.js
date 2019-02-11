@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import { Transition, Segment, Header, List, Modal } from 'semantic-ui-react'
-import { Link, Switch, Route } from 'react-router-dom'
+import { Transition } from 'semantic-ui-react'
+import { Route } from 'react-router-dom'
 import styles from '../WritingSamples.module.css'
 import 'pure-react-carousel/dist/react-carousel.es.css'
 import PorterSail from './PorterSail/PorterSail'

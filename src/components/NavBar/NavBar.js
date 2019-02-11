@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import styles from './NavBar.module.css'
-import { Menu, Segment, Dropdown } from 'semantic-ui-react'
+import { Menu, Dropdown } from 'semantic-ui-react'
 
 export default class MenuExampleInvertedSecondary extends Component {
   state = { activeItem: 'home' }

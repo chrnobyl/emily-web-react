@@ -13,9 +13,6 @@ const Xfinity = (props) => {
       <List.Item>
         <a target='_blank' rel='noopener noreferrer' href='https://es.xfinity.com/sdmy/blogs/tv/2009/07/23/bravo-stars-nikki-cascone-and-christian-siriano-team-up/'>Bravo Stars Nikki Cascone and Christian Siriano Team Up</a>
       </List.Item>
-      <List.Item>
-        <a target='_blank' rel='noopener noreferrer' href='https://es.xfinity.com/sdmy/blogs/tv/author/emilyhochberg/page/1/'>See more...</a>
-      </List.Item>
     </List>
   )
 }
