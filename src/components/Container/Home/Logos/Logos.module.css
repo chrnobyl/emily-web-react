@@ -27,20 +27,6 @@
   grid-row-start: auto;
 }
 
-/* .logo-description {
-  grid-area: description;
-  text-align: center;
-  font-size: large;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  font-family: var(--main-font);
-  grid-column-start: 1;
-  grid-column-end: 11;
-  grid-row: 2;
-} */
-
 .redfin {
   grid-area: logo;
   grid-column: 1;

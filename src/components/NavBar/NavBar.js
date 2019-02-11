@@ -34,9 +34,9 @@ export default class MenuExampleInvertedSecondary extends Component {
           onClick={this.handleItemClick}
           >
           <Dropdown.Menu>
-            <Dropdown.Item text='Travel' as={Link} to='/writing_samples'/>
+            <Dropdown.Item text='Travel' as={Link} to='/travel'/>
             <Dropdown.Item text='Lifestyle' as={Link} to='/lifestyle'/>
-            <Dropdown.Item text='Entertainment' as={Link} to='/Entertainment'/>
+            <Dropdown.Item text='Entertainment' as={Link} to='/entertainment'/>
           </Dropdown.Menu>
         </Dropdown>
 

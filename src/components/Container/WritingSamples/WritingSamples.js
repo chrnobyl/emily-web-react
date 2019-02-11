@@ -3,12 +3,12 @@ import { Transition, Segment, Header, List, Modal } from 'semantic-ui-react'
 import { Link, Switch, Route } from 'react-router-dom'
 import styles from './WritingSamples.module.css'
 import 'pure-react-carousel/dist/react-carousel.es.css'
-import FeatureGuides from './FeatureGuides/FeatureGuides'
-import PhotoEssays from './PhotoEssays/PhotoEssays'
-import AppCuration from './AppCuration/AppCuration'
-import VenueWriteUps from './VenueWriteUps/VenueWriteUps'
-import Interviews from './Interviews/Interviews'
-import SecretEscapes from './SecretEscapes/SecretEscapes'
+// import FeatureGuides from './FeatureGuides/FeatureGuides'
+// import PhotoEssays from './PhotoEssays/PhotoEssays'
+// import AppCuration from './AppCuration/AppCuration'
+// import VenueWriteUps from './VenueWriteUps/VenueWriteUps'
+// import Interviews from './Interviews/Interviews'
+// import SecretEscapes from './SecretEscapes/SecretEscapes'
 
 export default class WritingSamples extends Component {
   state = { visible: false }
