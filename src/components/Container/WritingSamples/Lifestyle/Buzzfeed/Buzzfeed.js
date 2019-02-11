@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
-import { List, Modal, Header } from 'semantic-ui-react'
-import Sample from '../../Sample/Sample'
+import { List } from 'semantic-ui-react'
 
 const Buzzfeed = (props) => {
   return (

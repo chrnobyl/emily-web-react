@@ -1,14 +1,14 @@
 import React, { Component } from 'react'
 import { List } from 'semantic-ui-react'
 
-const Xfinity = (props) => {
+const Mtv = (props) => {
   return (
     <List size='medium' relaxed>
       <List.Item>
-        <a target='_blank' href='https://es.xfinity.com/sdmy/blogs/tv/2009/06/03/rescue-me-star-denis-leary-answers-burning-questions/'>‘Rescue Me’ Star Denis Leary Answers Burning Questions</a>
+        <a target='_blank' href='http://www.mtv.com/news/2514075/selena-gomez-kendall-jenner-sherri-hill/'>Selena Gomez or Kendall Jenner: Who Wore Sherri Hill Best?</a>
       </List.Item>
       <List.Item>
-        <a target='_blank' href='https://es.xfinity.com/sdmy/blogs/tv/2009/08/20/project-runways-jeffrey-sebelia-where-is-he-now/'>Project Runway’s Jeffrey Sebelia: Where is He Now?</a>
+        <a target='_blank' href='http://www.mtv.com/news/2514073/platform-shoes-fearne-cotton-whitney-port-jennifer-hudson/'>Shoe Update: Fearne Cotton, Whitney Port, and Jennifer Hudson Pick Platforms</a>
       </List.Item>
       <List.Item>
         <a target='_blank' href='https://es.xfinity.com/sdmy/blogs/tv/2009/07/23/bravo-stars-nikki-cascone-and-christian-siriano-team-up/'>Bravo Stars Nikki Cascone and Christian Siriano Team Up</a>
@@ -20,4 +20,4 @@ const Xfinity = (props) => {
   )
 }
 
-export default Xfinity
+export default Mtv
