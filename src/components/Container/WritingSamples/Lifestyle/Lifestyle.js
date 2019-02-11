@@ -6,6 +6,7 @@ import 'pure-react-carousel/dist/react-carousel.es.css'
 import Buzzfeed from './Buzzfeed/Buzzfeed'
 import JerusalemPost from './JerusalemPost/JerusalemPost'
 import FabFitFun from './FabFitFun/FabFitFun'
+import Redfin from './Redfin/Redfin'
 
 export default class Lifestyle extends Component {
   state = { visible: false }
@@ -31,6 +32,8 @@ export default class Lifestyle extends Component {
               <JerusalemPost />
               <h2 style={{fontFamily: 'Comfortaa'}}>FabFitFun</h2>
               <FabFitFun />
+              <h2 style={{fontFamily: 'Comfortaa'}}>Redfin</h2>
+              <Redfin />
             </div>
           </div>
         </Transition>
