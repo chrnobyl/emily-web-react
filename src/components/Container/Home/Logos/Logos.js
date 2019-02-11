@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Image, Transition } from 'semantic-ui-react'
+import { Transition } from 'semantic-ui-react'
 import styles from './Logos.module.css'
 
 export default class Logos extends Component {
@@ -66,7 +66,7 @@ export default class Logos extends Component {
           <div className={styles['people']}>
           </div>
         </Transition>
-        
+
         <Transition visible={visible} animation='fade' duration={800}>
           <div className={styles['buzzfeed']}>
           </div>

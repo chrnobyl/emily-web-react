@@ -1,20 +1,20 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { List } from 'semantic-ui-react'
 
 const Mtv = (props) => {
   return (
     <List size='medium' relaxed>
       <List.Item>
-        <a target='_blank' href='http://www.mtv.com/news/2514075/selena-gomez-kendall-jenner-sherri-hill/'>Selena Gomez or Kendall Jenner: Who Wore Sherri Hill Best?</a>
+        <a target='_blank' rel='noopener noreferrer' href='http://www.mtv.com/news/2514075/selena-gomez-kendall-jenner-sherri-hill/'>Selena Gomez or Kendall Jenner: Who Wore Sherri Hill Best?</a>
       </List.Item>
       <List.Item>
-        <a target='_blank' href='http://www.mtv.com/news/2514073/platform-shoes-fearne-cotton-whitney-port-jennifer-hudson/'>Shoe Update: Fearne Cotton, Whitney Port, and Jennifer Hudson Pick Platforms</a>
+        <a target='_blank' rel='noopener noreferrer' href='http://www.mtv.com/news/2514073/platform-shoes-fearne-cotton-whitney-port-jennifer-hudson/'>Shoe Update: Fearne Cotton, Whitney Port, and Jennifer Hudson Pick Platforms</a>
       </List.Item>
       <List.Item>
-        <a target='_blank' href='https://es.xfinity.com/sdmy/blogs/tv/2009/07/23/bravo-stars-nikki-cascone-and-christian-siriano-team-up/'>Bravo Stars Nikki Cascone and Christian Siriano Team Up</a>
+        <a target='_blank' rel='noopener noreferrer' href='http://www.mtv.com/news/2514067/debby-ryan-cynthia-steffe/'>Get the Look: Debby Ryan's Cynthia Steffe Dress</a>
       </List.Item>
       <List.Item>
-        <a target='_blank' href='https://es.xfinity.com/sdmy/blogs/tv/author/emilyhochberg/page/1/'>See more...</a>
+        <a target='_blank' rel='noopener noreferrer' href='http://www.mtv.com/news/2514071/denim-deena-jersey-shore-ashley-greene-charlize-theron/'>Is the Texas Tuxedo Making a Comeback?</a>
       </List.Item>
     </List>
   )

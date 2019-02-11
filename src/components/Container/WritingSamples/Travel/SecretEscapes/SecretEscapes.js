@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import { List, Modal, Header } from 'semantic-ui-react'
+import React from 'react'
+import { List } from 'semantic-ui-react'
 import Sample from '../../Sample/Sample'
 
 const SecretEscapes = (props) => {
