@@ -1,16 +1,54 @@
 import React, { Component } from 'react'
-import { Transition } from 'semantic-ui-react'
+import { Transition, Button, Form } from 'semantic-ui-react'
+
 import { Route } from 'react-router-dom'
 import '../../../App.css';
 
 export default class Contact extends Component {
-  state = { visible: false }
+  constructor(props){
+    super()
+
+    this.state = {
+      visible: false,
+      name: "",
+      email: "",
+      message: ""
+    }
+
+    this.handleChange = this.handleChange.bind(this)
+    // this.handleSubmit = this.handleSubmit.bind(this)
+
+  }
+  // state = {
+  //   visible: false,
+  //   name: "",
+  //   email: "",
+  //   message: ""
+  // }
 
   toggleVisibility = () => this.setState({ visible: !this.state.visible })
 
   componentDidMount() {
     this.toggleVisibility()
   }
+
+  handleChange(event, result) {
+      this.setState({
+        [result.placeholder]: result.value
+      })
+    }
+
+  // handleSubmit(event) {
+  //   event.preventDefault()
+  //   let stateObj = this.state
+  //   console.log(stateObj)
+  //   for (var key in stateObj) {
+  //     if (stateObj[key] === ""){
+  //       delete stateObj[key]
+  //     }
+  //   }
+  //   this.props.applyFilter(stateObj)
+  // }
 
   render() {
     const { visible } = this.state
@@ -19,14 +57,16 @@ export default class Contact extends Component {
       <Route path="/contact" render={() =>
         <Transition visible={visible} animation='fade' duration={800}>
           <div className='block'>
-            <h1 style={{fontFamily: 'Comfortaa'}}>Contact info goes here</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus efficitur at nibh nec placerat. In pharetra est nec quam cursus, nec malesuada turpis pulvinar. Aliquam mattis, ipsum quis fringilla ornare, orci ante accumsan neque, vel tempus mauris urna vitae ipsum. Suspendisse et fringilla velit, eu aliquet nibh. Suspendisse luctus turpis vitae nisi aliquet, quis dictum sem molestie. Sed eu enim ut urna finibus convallis in at enim. Aliquam eu nunc porttitor, pretium purus quis, congue lorem. Donec elementum ut risus a venenatis. Sed molestie facilisis nulla, quis fermentum dolor tempor et. Integer quis scelerisque leo, vitae luctus enim. Phasellus euismod suscipit fringilla. Suspendisse sed porttitor quam.
-            </p>
-
-            <p>
-              Pellentesque pulvinar id orci eu accumsan. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean pellentesque convallis nulla, ac mattis nisl malesuada et. Donec ut nulla nibh. Quisque eget mi lorem. Aliquam tortor odio, pulvinar eget pretium sit amet, semper nec lorem. Vestibulum volutpat tempor cursus. Etiam gravida tellus consectetur tellus feugiat, sit amet pretium ligula suscipit. Aenean accumsan sapien nec libero ornare placerat. Aenean leo sapien, auctor a tempus volutpat, gravida ut enim. Fusce sagittis rhoncus turpis sed aliquet. Integer scelerisque, risus quis vulputate fermentum, tellus ex pharetra lectus, sit amet bibendum risus enim id urna. Praesent feugiat, libero ac porttitor consectetur, dolor tortor tincidunt augue, nec pellentesque eros ligula nec tortor. Duis in ipsum fringilla, posuere nunc sit amet, rutrum nibh.
-            </p>
+            <h1 style={{fontFamily: 'Comfortaa'}}>Contact me</h1>
+            <Form>
+              <Form.Input label='Name:' type='text' name='string' value={this.state.string} onChange={this.handleChange}>
+              </Form.Input>
+              <Form.Input label='Email:' type='text' name='string' value={this.state.string} onChange={this.handleChange}>
+              </Form.Input>
+              <Form.TextArea label='Message:' type='text' name='string' value={this.state.string} onChange={this.handleChange}>
+              </Form.TextArea>
+              <Form.Button>Submit</Form.Button>
+            </Form>
           </div>
         </Transition>
       }/>
