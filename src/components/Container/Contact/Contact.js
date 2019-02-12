@@ -104,11 +104,11 @@ export default class Contact extends Component {
           <div className='block'>
             <h1 style={{fontFamily: 'Comfortaa'}}>Contact me</h1>
             <Form onSubmit={this.handleSubmit}>
-              <Form.Input label='Name:' type='text' name='senderName' value={this.state.senderName} onChange={this.handleChange}>
+              <Form.Input required label='Name:' type='text' name='senderName' value={this.state.senderName} onChange={this.handleChange}>
               </Form.Input>
-              <Form.Input label='Email:' type='text' name='email' value={this.state.email} onChange={this.handleChange}>
+              <Form.Input required label='Email:' type='text' name='email' value={this.state.email} onChange={this.handleChange}>
               </Form.Input>
-              <Form.TextArea label='Message:' type='text' name='message' value={this.state.message} onChange={this.handleChange}>
+              <Form.TextArea required label='Message:' type='text' name='message' value={this.state.message} onChange={this.handleChange}>
               </Form.TextArea>
               <Form.Button>Submit</Form.Button>
             </Form>
