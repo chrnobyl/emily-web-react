@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types'
 import React, { Component } from 'react'
 import { Transition, Button, Form } from 'semantic-ui-react'
-
 import { Route } from 'react-router-dom'
 import '../../../App.css';
 
@@ -11,13 +10,14 @@ export default class Contact extends Component {
 
     this.state = {
       visible: false,
-      name: '',
+      senderName: '',
       email: '',
       message: '',
       formSubmitted: false
     }
 
     this.handleChange = this.handleChange.bind(this)
+    this.handleCancel = this.handleCancel.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this)
 
   }
@@ -27,6 +27,7 @@ export default class Contact extends Component {
   //   email: "",
   //   message: ""
   // }
+  static sender = 'sender@example.com'
 
   toggleVisibility = () => this.setState({ visible: !this.state.visible })
 
@@ -34,15 +35,22 @@ export default class Contact extends Component {
     this.toggleVisibility()
   }
 
-  handleChange(event, result) {
-      this.setState({
-        [result.placeholder]: result.value
-      })
-    }
+  handleCancel() {
+    this.setState({
+      name: '',
+      email: '',
+      message: ''
+    })
+  }
+
+  handleChange(e){
+    this.setState({
+      [e.target.name]: e.target.value
+    })
+  }
 
   handleSubmit(event){
       event.preventDefault()
-      debugger
 
       const {
         REACT_APP_EMAILJS_RECEIVER: receiverEmail,
@@ -51,7 +59,8 @@ export default class Contact extends Component {
 
       this.sendMessage(
         template,
-        this.props.senderEmail,
+        this.state.senderName,
+        this.state.email,
         receiverEmail,
         this.state.message)
 
@@ -60,14 +69,16 @@ export default class Contact extends Component {
       })
     }
 
-    sendMessage(templateId, senderEmail, receiverEmail, feedback){
+    sendMessage(templateId, senderName, senderEmail, receiverEmail, message){
+      debugger
       window.emailjs.send(
         'gmail',
         templateId,
         {
+          senderName,
           senderEmail,
           receiverEmail,
-          feedback
+          message
         })
         .then(res => {
           this.setState({ formEmailSent: true })
@@ -85,11 +96,11 @@ export default class Contact extends Component {
           <div className='block'>
             <h1 style={{fontFamily: 'Comfortaa'}}>Contact me</h1>
             <Form onSubmit={this.handleSubmit}>
-              <Form.Input label='Name:' type='text' name='string' value={this.state.string} onChange={this.handleChange}>
+              <Form.Input label='Name:' type='text' name='senderName' value={this.state.senderName} onChange={this.handleChange}>
               </Form.Input>
-              <Form.Input label='Email:' type='text' name='string' value={this.state.string} onChange={this.handleChange}>
+              <Form.Input label='Email:' type='text' name='email' value={this.state.email} onChange={this.handleChange}>
               </Form.Input>
-              <Form.TextArea label='Message:' type='text' name='string' value={this.state.string} onChange={this.handleChange}>
+              <Form.TextArea label='Message:' type='text' name='message' value={this.state.message} onChange={this.handleChange}>
               </Form.TextArea>
               <Form.Button>Submit</Form.Button>
             </Form>
