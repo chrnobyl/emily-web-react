@@ -12,7 +12,7 @@ export default class MenuExampleInvertedSecondary extends Component {
     const { activeItem } = this.state
 
     return (
-      <Menu stackable inverted widths='4' size='massive'>
+      <Menu stackable inverted widths='4' size='massive' color='grey'>
         <Menu.Item name='home'
           as={Link} to='/'
           position='right'
