@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import './App.css'
 import Header from './components/Header/Header'
 import Container from './components/Container/Container'
@@ -9,7 +10,7 @@ class App extends Component {
     return (
       <div>
         <Header />
-        <Container />
+        <Container env={this.props.env} />
         <Footer />
       </div>
     );
