@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import { Button, Transition } from 'semantic-ui-react'
 import styles from './WorkTogether.module.css'
 
@@ -20,7 +21,7 @@ export default class WorkTogether extends Component {
           <p>
             Let's work together! Drop me a line and I'll see what I can do for you.
           </p>
-          <Button>Contact me</Button>
+          <Button as={Link} to='/contact'>Contact me</Button>
         </div>
       </Transition>
     )
