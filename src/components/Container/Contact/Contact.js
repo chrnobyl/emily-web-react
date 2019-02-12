@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import React, { Component } from 'react'
 import { Transition, Button, Form } from 'semantic-ui-react'
 
@@ -10,13 +11,14 @@ export default class Contact extends Component {
 
     this.state = {
       visible: false,
-      name: "",
-      email: "",
-      message: ""
+      name: '',
+      email: '',
+      message: '',
+      formSubmitted: false
     }
 
     this.handleChange = this.handleChange.bind(this)
-    // this.handleSubmit = this.handleSubmit.bind(this)
+    this.handleSubmit = this.handleSubmit.bind(this)
 
   }
   // state = {
@@ -38,17 +40,41 @@ export default class Contact extends Component {
       })
     }
 
-  // handleSubmit(event) {
-  //   event.preventDefault()
-  //   let stateObj = this.state
-  //   console.log(stateObj)
-  //   for (var key in stateObj) {
-  //     if (stateObj[key] === ""){
-  //       delete stateObj[key]
-  //     }
-  //   }
-  //   this.props.applyFilter(stateObj)
-  // }
+  handleSubmit(event){
+      event.preventDefault()
+      debugger
+
+      const {
+        REACT_APP_EMAILJS_RECEIVER: receiverEmail,
+        REACT_APP_EMAILJS_TEMPLATEID: template
+      } = this.props.env
+
+      this.sendMessage(
+        template,
+        this.props.senderEmail,
+        receiverEmail,
+        this.state.message)
+
+      this.setState({
+        formSubmitted: true
+      })
+    }
+
+    sendMessage(templateId, senderEmail, receiverEmail, feedback){
+      window.emailjs.send(
+        'gmail',
+        templateId,
+        {
+          senderEmail,
+          receiverEmail,
+          feedback
+        })
+        .then(res => {
+          this.setState({ formEmailSent: true })
+        })
+        // Handle errors here however you like, or use a React error boundary
+        .catch(err => console.error('Failed to send feedback. Error: ', err))
+    }
 
   render() {
     const { visible } = this.state
@@ -58,7 +84,7 @@ export default class Contact extends Component {
         <Transition visible={visible} animation='fade' duration={800}>
           <div className='block'>
             <h1 style={{fontFamily: 'Comfortaa'}}>Contact me</h1>
-            <Form>
+            <Form onSubmit={this.handleSubmit}>
               <Form.Input label='Name:' type='text' name='string' value={this.state.string} onChange={this.handleChange}>
               </Form.Input>
               <Form.Input label='Email:' type='text' name='string' value={this.state.string} onChange={this.handleChange}>
@@ -73,3 +99,7 @@ export default class Contact extends Component {
     )
   }
 }
+
+Contact.propTypes = {
+  env: PropTypes.object.isRequired
+};
