@@ -2,6 +2,7 @@ import PropTypes from 'prop-types'
 import React, { Component } from 'react'
 import { Transition, Button, Form } from 'semantic-ui-react'
 import { Route } from 'react-router-dom'
+import Success from './Success'
 import '../../../App.css';
 
 export default class Contact extends Component {
@@ -37,7 +38,7 @@ export default class Contact extends Component {
 
   handleCancel() {
     this.setState({
-      name: '',
+      senderName: '',
       email: '',
       message: ''
     })
@@ -64,13 +65,15 @@ export default class Contact extends Component {
         receiverEmail,
         this.state.message)
 
-      this.setState({
-        formSubmitted: true
-      })
+      // this.setState({
+      //   senderName: '',
+      //   email: '',
+      //   message: '',
+      //   formSubmitted: true
+      // })
     }
 
     sendMessage(templateId, senderName, senderEmail, receiverEmail, message){
-      debugger
       window.emailjs.send(
         'gmail',
         templateId,
@@ -81,7 +84,12 @@ export default class Contact extends Component {
           message
         })
         .then(res => {
-          this.setState({ formEmailSent: true })
+          this.setState({
+            senderName: '',
+            email: '',
+            message: '',
+            formSubmitted: true
+          })
         })
         // Handle errors here however you like, or use a React error boundary
         .catch(err => console.error('Failed to send feedback. Error: ', err))
@@ -104,6 +112,7 @@ export default class Contact extends Component {
               </Form.TextArea>
               <Form.Button>Submit</Form.Button>
             </Form>
+            <Success visible={this.state.formSubmitted} />
           </div>
         </Transition>
       }/>
