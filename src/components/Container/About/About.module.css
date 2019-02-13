@@ -50,11 +50,20 @@
 .about-pic {
   grid-area: pic;
   width: 100%;
-  background-image: url(em_bowie.jpg);
+  background-image: url('./images/em_bowie.jpg');
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
 }
+
+/* .work-pic {
+  grid-area: work-pic;
+  width: 100%;
+  background-image: url('./go_get_em_lo_res.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+} */
 
 @media (min-width: 481px) and (max-width: 812px) {
 
@@ -109,10 +118,9 @@
     height: inherit;
   }
 
-  [class*="home-grid"] {
+  /* [class*="home-grid"] {
     display: grid;
     font-size: 10pt;
-    /* max-height: inherit; */
     max-width: 100vw;
     grid-column-gap: 0;
     grid-row-gap: 0;
@@ -125,9 +133,9 @@
       'logo'
       'work-together work-pic'
       'work-together work-pic'
-  }
+  } */
 
-  [class*="travel-pic"] {
+  /* [class*="travel-pic"] {
     grid-area: travel-pic;
     width: 50vw;
     background-image: url('./em_azores.jpg');
@@ -144,7 +152,7 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
-  }
+  } */
 
   h1 { font-size: 10pt !important; }
   h2 { font-size: 10pt !important; }
