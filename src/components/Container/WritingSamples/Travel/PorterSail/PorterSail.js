@@ -29,6 +29,9 @@ const PorterSail = (props) => {
         <List.Header>Interviews</List.Header>
         <Interviews />
       </List.Item>
+      <List.Item>
+        <a target='_blank' rel='noopener noreferrer' href='https://www.designhotels.com/mycommunity/blog/2019/02/06/paris-fashion-secrets-louis-vuittons-editorial-director#more-8506'>Paris according to Louis Vuitton’s editorial director</a>
+      </List.Item>
     </List>
   )
 }
