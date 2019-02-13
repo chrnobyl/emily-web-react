@@ -13,8 +13,10 @@ export default class Contact extends Component {
       visible: false,
       senderName: '',
       email: '',
+      emailError: false,
       message: '',
-      formSubmitted: false
+      formSubmitted: false,
+      formError: false
     }
 
     this.handleChange = this.handleChange.bind(this)
@@ -50,8 +52,29 @@ export default class Contact extends Component {
     })
   }
 
+  validateEmail(email){
+      let re = /\S+@\S+\.\S+/;
+      return re.test(email);
+  }
+
   handleSubmit(event){
       event.preventDefault()
+
+      let error = false
+
+      if (this.state.email === '' || this.validateEmail(this.state.email) === false){
+        this.setState({ emailError: true })
+        error = true
+      } else {
+        this.setState({ emailError: false })
+      }
+
+      if (error){
+        this.setState({ formError: true })
+        return
+      }
+
+      this.setState({ formError: false })
 
       const {
         REACT_APP_EMAILJS_RECEIVER: receiverEmail,
@@ -65,12 +88,6 @@ export default class Contact extends Component {
         receiverEmail,
         this.state.message)
 
-      // this.setState({
-      //   senderName: '',
-      //   email: '',
-      //   message: '',
-      //   formSubmitted: true
-      // })
     }
 
     sendMessage(templateId, senderName, senderEmail, receiverEmail, message){
@@ -106,7 +123,7 @@ export default class Contact extends Component {
             <Form onSubmit={this.handleSubmit}>
               <Form.Input required label='Name:' type='text' name='senderName' value={this.state.senderName} onChange={this.handleChange}>
               </Form.Input>
-              <Form.Input required label='Email:' type='text' name='email' value={this.state.email} onChange={this.handleChange}>
+              <Form.Input required label='Email:' type='text' name='email' erro={this.state.emailError} value={this.state.email} onChange={this.handleChange}>
               </Form.Input>
               <Form.TextArea required label='Message:' type='text' name='message' value={this.state.message} onChange={this.handleChange}>
               </Form.TextArea>
