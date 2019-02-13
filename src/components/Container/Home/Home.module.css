@@ -30,7 +30,7 @@
   grid-area: travel-pic;
   float: left;
   width: 100%;
-  background-image: url('./em_azores.jpg');
+  background-image: url('./em_azores_lo_res.jpg');
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -39,7 +39,7 @@
 .lifestyle-pic {
   grid-area: lifestyle-pic;
   width: 100%;
-  background-image: url('./em_food.jpg');
+  background-image: url('./em_food_lo_res.jpg');
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -48,7 +48,7 @@
 .work-pic {
   grid-area: work-pic;
   width: 100%;
-  background-image: url('./go_get_em.jpg');
+  background-image: url('./go_get_em_lo_res.jpg');
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
