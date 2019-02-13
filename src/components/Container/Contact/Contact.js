@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 import { Transition, Button, Form } from 'semantic-ui-react'
 import { Route } from 'react-router-dom'
 import Success from './Success'
+import Failure from './Failure'
 import '../../../App.css';
 
 export default class Contact extends Component {
@@ -130,6 +131,7 @@ export default class Contact extends Component {
               <Form.Button>Submit</Form.Button>
             </Form>
             <Success visible={this.state.formSubmitted} />
+            <Failure visible={this.state.formError} />
           </div>
         </Transition>
       }/>
