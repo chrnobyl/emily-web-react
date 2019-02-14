@@ -1,7 +1,7 @@
 .about-container {
   display: inline-block;
   /* width: 80%; */
-  min-height: 40em;
+  min-height: 100vh;
   /* background: aqua; */
   /* margin: auto; */
   /* padding: 10px; */
@@ -109,24 +109,26 @@
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
 
-  /* [class*="about-container"] {
+  [class*="about-container"] {
     display: block;
     margin: 0 auto;
   }
 
   [class*="about-pic"] {
-    display: block;
-    float: none;
-    width: 100%;
-    background-size: contain;
-    min-height: 100vw;
+    /* display: block;
+    float: none; */
+    width: 65%;
+    background-size: cover;
+    /* min-height: 100vw; */
   }
 
   [class*="about-text"] {
-    display: block;
-    float: none;
-    width: 100%;
-  } */
+    font-size: medium;
+    /* max-height: 80vh; */
+    /* display: block;
+    float: none; */
+    width: 35%;
+  }
 
   h1 { font-size: 13pt !important; }
   h2 { font-size: 11pt !important; }
@@ -153,6 +155,7 @@ and (orientation : portrait) {
 
   [class*="about-text"] {
     display: block;
+
     float: none;
     width: 100%;
   }
