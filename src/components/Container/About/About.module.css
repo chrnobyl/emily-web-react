@@ -21,7 +21,7 @@
   font-family: var(--main-font);
 }
 
-.about-grid {
+/* .about-grid {
   display: grid;
   height: 100%;
   grid-column-gap: 0;
@@ -30,11 +30,10 @@
   grid-template-columns: 50% 50%;
   grid-template-areas:
     'pic abt-text'
-}
+} */
 
-.about-text {
+/* .about-text {
   grid-area: abt-text;
-  /* float: left; */
   text-align: center;
   font-size: large;
   font-family: var(--main-font);
@@ -45,9 +44,9 @@
   padding-top: 2em;
   padding-bottom: 2em;
   background-color: #8FD8D2;
-}
+} */
 
-.about-pic {
+/* .about-pic {
   grid-area: pic;
   float: left;
   width: 50%;
@@ -55,7 +54,7 @@
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
-}
+} */
 
 .work-grid {
   display: grid;
@@ -94,17 +93,19 @@
 
 }
 
-.container {
+.about-container {
+  /* display: flex; */
   /* width: 80%; */
-  height: 100%;
+  min-height: 40em;
   /* background: aqua; */
-  margin: auto;
+  /* margin: auto; */
   /* padding: 10px; */
 }
 
-.item1 {
+.about-pic {
+  /* display: inline-block;  */
   width: 50%;
-  min-height: 40em;
+  min-height: inherit;
   float: left;
   background-image: url('./images/em_bowie.jpg');
   background-repeat: no-repeat;
@@ -112,15 +113,22 @@
   background-size: cover;
 }
 
-.item2 {
+.about-text {
+  display: inline-block;
+  /* flex-grow: 1; */
   /* margin-left: 15%; */
   /* height: 200px; */
-  margin-left: 2em;
-  padding-left: 5em;
+  /* float: right; */
+  min-height: inherit;
+  width: 50%;
+  text-align: center;
+  font-family: var(--main-font);
+  font-size: large;
+  color: #DF744A;
+  padding-left: 2em;
   padding-right: 2em;
-  padding-top: 15em;
+  padding-top: 2em;
   padding-bottom: 2em;
-  min-height: 40em;
   background-color: #8FD8D2;
 }
 
