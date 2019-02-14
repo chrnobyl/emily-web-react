@@ -94,6 +94,36 @@
 
 }
 
+.container {
+  /* width: 80%; */
+  height: 100%;
+  /* background: aqua; */
+  margin: auto;
+  /* padding: 10px; */
+}
+
+.item1 {
+  width: 50%;
+  min-height: 40em;
+  float: left;
+  background-image: url('./images/em_bowie.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.item2 {
+  /* margin-left: 15%; */
+  /* height: 200px; */
+  margin-left: 2em;
+  padding-left: 5em;
+  padding-right: 2em;
+  padding-top: 15em;
+  padding-bottom: 2em;
+  min-height: 40em;
+  background-color: #8FD8D2;
+}
+
 @media (min-width: 481px) and (max-width: 812px) {
 
   [class*="intro"] {
