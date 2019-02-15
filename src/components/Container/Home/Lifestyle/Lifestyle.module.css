@@ -38,9 +38,8 @@
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
 
   [class*="lifestyle"] {
-    grid-area: lifestyle-desc;
-    float: left;
-    /* text-align: left; */
+    /* grid-area: lifestyle-desc; */
+    /* float: left; */
     max-width: 50vw;
     font-size: 9pt;
     padding-left: 1em;
@@ -48,6 +47,10 @@
     padding-top: 1em;
     padding-bottom: 0em;
     font-family: var(--main-font);
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 2;
   }
 
   h1 { font-size: 10pt !important; }
