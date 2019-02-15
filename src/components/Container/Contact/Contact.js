@@ -4,7 +4,7 @@ import { Transition, Button, Form } from 'semantic-ui-react'
 import { Route } from 'react-router-dom'
 import Success from './Success'
 import Failure from './Failure'
-import '../../../App.css';
+import styles from './Contact.module.css'
 
 export default class Contact extends Component {
   constructor(props){
@@ -119,7 +119,7 @@ export default class Contact extends Component {
     return (
       <Route path="/contact" render={() =>
         <Transition visible={visible} animation='fade' duration={800}>
-          <div className='block'>
+          <div className={styles['contact-form']}>
             <h1 style={{fontFamily: 'Comfortaa'}}>Contact me</h1>
             <Form onSubmit={this.handleSubmit}>
               <Form.Input required label='Name:' type='text' name='senderName' value={this.state.senderName} onChange={this.handleChange}>
