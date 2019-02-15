@@ -8,6 +8,7 @@ h1 {
 
 .header {
   text-align: center;
+  font-family: var(--main-font);
   font-size: large;
   font-weight: bolder;
   padding-left: 10em;
@@ -78,8 +79,14 @@ h1 {
     padding-bottom: 1em;
   }
 
-  h1 { font-size: 15pt !important; }
-  h2 { font-size: 14pt !important; }
+  [class*="nav"] {
+    padding: 10px;
+    font-size: 15pt;
+    font-family: var(--main-font);
+  }
+
+  h1 { font-size: 36pt !important; }
+  h2 { font-size: 18pt !important; }
   h3 { font-size: 12pt !important; }
 
 }

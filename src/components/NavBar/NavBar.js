@@ -12,13 +12,13 @@ export default class MenuExampleInvertedSecondary extends Component {
     const { activeItem } = this.state
 
     return (
-      <Menu stackable inverted widths='4' size='massive' color='grey'>
+      <Menu className={styles['nav']} stackable inverted widths='4' size='massive' color='grey'>
         <Menu.Item name='home'
           as={Link} to='/'
           position='right'
           active={activeItem === 'home'}
           onClick={this.handleItemClick}>
-          <h3 className={styles['nav']}>Home</h3>
+          Home
         </Menu.Item>
         <Menu.Item name='about'
           as={Link} to='/about'
