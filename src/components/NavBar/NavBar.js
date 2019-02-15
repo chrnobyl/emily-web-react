@@ -12,20 +12,20 @@ export default class MenuExampleInvertedSecondary extends Component {
     const { activeItem } = this.state
 
     return (
-      <Menu className={styles['nav']} stackable inverted widths='4' size='massive' color='grey'>
-        <Menu.Item name='home'
+      <Menu stackable inverted widths='4' size='massive' color='grey'>
+        <Menu.Item className={styles['nav']} name='home'
           as={Link} to='/'
           position='right'
           active={activeItem === 'home'}
           onClick={this.handleItemClick}>
           Home
         </Menu.Item>
-        <Menu.Item name='about'
+        <Menu.Item className={styles['nav']} name='about'
           as={Link} to='/about'
           position='right'
           active={activeItem === 'about'}
           onClick={this.handleItemClick}>
-          <h3 className={styles['nav']}>About</h3>
+          About
         </Menu.Item>
 
         <Dropdown className={styles['nav']} item text='Writing Samples'
@@ -39,13 +39,12 @@ export default class MenuExampleInvertedSecondary extends Component {
             <Dropdown.Item text='Entertainment' as={Link} to='/entertainment'/>
           </Dropdown.Menu>
         </Dropdown>
-
-        <Menu.Item
-          name='contact'
+        
+        <Menu.Item className={styles['nav']} name='contact'
           as={Link} to='/contact'
           active={activeItem === 'contact'}
           onClick={this.handleItemClick}>
-          <h3 className={styles['nav']}>Contact</h3>
+          Contact
         </Menu.Item>
       </Menu>
     )
