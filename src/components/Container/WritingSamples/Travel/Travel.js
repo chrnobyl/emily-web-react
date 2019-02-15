@@ -23,10 +23,10 @@ export default class Travel extends Component {
         <Transition visible={visible} animation='fade' duration={800}>
         <div className={styles['samples-container']}>
           <div className={styles['samples-text']}>
-            <h1 style={{fontFamily: 'Comfortaa'}}>Travel writing samples:</h1>
-            <h2 style={{fontFamily: 'Comfortaa'}}>Porter & Sail</h2>
+            <p>Travel writing samples:</p>
+            <p>Porter & Sail</p>
             <PorterSail />
-            <h2 style={{fontFamily: 'Comfortaa'}}>Secret Escapes</h2>
+            <p>Secret Escapes</p>
             <SecretEscapes />
           </div>
         </div>
