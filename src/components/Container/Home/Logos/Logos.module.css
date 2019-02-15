@@ -181,19 +181,21 @@
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
 
-  /* [class*="logo-grid"] {
+  [class*="logo-grid"] {
     display: grid;
     grid-area: logo;
     width: 100vw;
     grid-column-gap: 1em;
     grid-row-gap: 0;
-    grid-template-rows: 1em 10em;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-template-rows: 10em 10em;
     grid-template-columns: repeat(10em);
     grid-template-areas:
       'logo-header'
       'description'
       'logo';
-  } */
+  }
 
   h1 { font-size: 10pt !important; }
   h2 { font-size: 10pt !important; }

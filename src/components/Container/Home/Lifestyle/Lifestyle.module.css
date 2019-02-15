@@ -39,9 +39,12 @@
 
   [class*="lifestyle"] {
     /* grid-area: lifestyle-desc; */
-    /* float: left; */
-    max-width: 50vw;
-    font-size: 9pt;
+    float: left;
+    /* display: inline-block; */
+    /* position: relative; */
+    /* max-width: 50vw; */
+    width: 100vw;
+    font-size: 11pt;
     padding-left: 1em;
     padding-right: 1em;
     padding-top: 1em;
