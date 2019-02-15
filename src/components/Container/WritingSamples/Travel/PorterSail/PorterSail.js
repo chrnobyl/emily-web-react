@@ -8,7 +8,7 @@ import Interviews from './Interviews/Interviews'
 
 const PorterSail = (props) => {
   return (
-    <List size='medium' relaxed>
+    <List size='medium'>
       <List.Item>
         <List.Header>Hotel Photo Gallery Essays</List.Header>
         <PhotoEssays />
