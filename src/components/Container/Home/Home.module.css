@@ -137,7 +137,8 @@
   }
 
   [class*="lifestyle-pic"] {
-    grid-area: lifestyle-pic;
+    /* grid-area: lifestyle-pic; */
+    /* float: right; */
     max-width: 50vw;
     position: relative;
     background-image: url('./em_food_lo_res.jpg');
