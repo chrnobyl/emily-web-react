@@ -64,10 +64,10 @@ h1 {
 
   [class*="header"] {
     text-align: center;
-    font-size: 20pt;
+    font-size: 16pt;
     padding-left: 1em;
     padding-right: 1em;
-    padding-top: 2em;
+    padding-top: 3em;
     padding-bottom: 0em;
   }
 
