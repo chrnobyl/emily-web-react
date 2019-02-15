@@ -25,14 +25,14 @@ export default class Lifestyle extends Component {
         <Transition visible={visible} animation='fade' duration={800}>
           <div className={styles['samples-container']}>
             <div className={styles['samples-text']}>
-              <h1 style={{fontFamily: 'Comfortaa'}}>Here are some Lifestyle writing samples:</h1>
-              <h2 className={styles['header']} onClick={()=> window.open('https://www.buzzfeed.com/efh45', '_blank')}>Buzzfeed</h2>
+              <p>Here are some Lifestyle writing samples:</p>
+              <p onClick={()=> window.open('https://www.buzzfeed.com/efh45', '_blank')}>Buzzfeed</p>
               <Buzzfeed />
-              <h2 style={{fontFamily: 'Comfortaa'}}>Jerusalem Post</h2>
+              <p>Jerusalem Post</p>
               <JerusalemPost />
-              <h2 className={styles['header']} onClick={()=> window.open('https://fabfitfun.com/magazine/author/emily-hochberggmail-com/', '_blank')}>FabFitFun</h2>
+              <p onClick={()=> window.open('https://fabfitfun.com/magazine/author/emily-hochberggmail-com/', '_blank')}>FabFitFun</p>
               <FabFitFun />
-              <h2 className={styles['header']} onClick={()=> window.open('https://www.redfin.com/blog/author/emily-hochbergredfin-com', '_blank')}>Redfin</h2>
+              <p onClick={()=> window.open('https://www.redfin.com/blog/author/emily-hochbergredfin-com', '_blank')}>Redfin</p>
               <Redfin />
             </div>
           </div>
