@@ -15,8 +15,8 @@ const Header = (props) => {
         <Icon onClick={()=> window.open('https://twitter.com/emily.hochberg', '_blank')} link name='twitter' size='big' />
       </div>
       <div className={styles['header']}>
-        <div className={styles['nav']}>Emily Hochberg</div>
-        <div className={styles['nav']}>Writer | Editor | Content & Social Media Strategist</div>
+        <p>Emily Hochberg</p>
+        <p>Writer | Editor | Content & Social Media Strategist</p>
       </div>
       <NavBar />
     </div>
