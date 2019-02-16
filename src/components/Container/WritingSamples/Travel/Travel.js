@@ -26,6 +26,7 @@ export default class Travel extends Component {
             <p>Travel writing samples:</p>
             <p>Porter & Sail</p>
             <PorterSail />
+            <br/>
             <p>Secret Escapes</p>
             <SecretEscapes />
           </div>
