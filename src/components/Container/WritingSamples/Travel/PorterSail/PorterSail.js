@@ -1,16 +1,16 @@
 import React from 'react'
 import { List } from 'semantic-ui-react'
+import styles from './PorterSail.module.css'
 import FeatureGuides from './FeatureGuides/FeatureGuides'
 import PhotoEssays from './PhotoEssays/PhotoEssays'
 import AppCuration from './AppCuration/AppCuration'
 import VenueWriteUps from './VenueWriteUps/VenueWriteUps'
 import Interviews from './Interviews/Interviews'
-import styles from './PorterSail.module.css'
 
 const PorterSail = (props) => {
   return (
     <List size='medium'>
-      <List.Item style={{padding: 0}}>
+      <List.Item>
         <p className={styles['header']}>Hotel Photo Gallery Essays</p>
         <PhotoEssays />
       </List.Item>

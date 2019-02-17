@@ -25,6 +25,10 @@
   cursor: pointer;
 }
 
+.company-title {
+  font-size: 16pt;
+}
+
 @media (min-width: 481px) and (max-width: 812px) {
 
   [class*="samples-container"] {
