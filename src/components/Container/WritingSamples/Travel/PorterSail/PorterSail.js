@@ -10,7 +10,7 @@ import styles from './PorterSail.module.css'
 const PorterSail = (props) => {
   return (
     <List size='medium'>
-      <List.Item>
+      <List.Item style={{padding: 0}}>
         <p className={styles['header']}>Hotel Photo Gallery Essays</p>
         <PhotoEssays />
       </List.Item>
