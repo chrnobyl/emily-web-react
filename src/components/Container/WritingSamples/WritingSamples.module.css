@@ -84,6 +84,11 @@
     vertical-align: top;
   }
 
+  [class*="samples-header"] {
+    font-size: 16pt;
+    color: black;
+  }
+
   h1 { font-size: 16pt !important; }
   h2 { font-size: 14pt !important; }
   h3 { font-size: 12pt !important; }
