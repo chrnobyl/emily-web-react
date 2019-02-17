@@ -5,28 +5,29 @@ import PhotoEssays from './PhotoEssays/PhotoEssays'
 import AppCuration from './AppCuration/AppCuration'
 import VenueWriteUps from './VenueWriteUps/VenueWriteUps'
 import Interviews from './Interviews/Interviews'
+import styles from './PorterSail.module.css'
 
 const PorterSail = (props) => {
   return (
     <List size='medium'>
       <List.Item>
-        <p>Hotel Photo Gallery Essays</p>
+        <p className={styles['header']}>Hotel Photo Gallery Essays</p>
         <PhotoEssays />
       </List.Item>
       <List.Item>
-        <p>Feature Guides</p>
+        <p className={styles['header']}>Feature Guides</p>
         <FeatureGuides />
       </List.Item>
       <List.Item>
-        <p>App Curation</p>
+        <p className={styles['header']}>App Curation</p>
         <AppCuration />
       </List.Item>
       <List.Item>
-        <p>Venue Write Ups</p>
+        <p className={styles['header']}>Venue Write Ups</p>
         <VenueWriteUps />
       </List.Item>
       <List.Item>
-        <p>Interviews</p>
+        <p className={styles['header']}>Interviews</p>
         <Interviews />
       </List.Item>
       <List.Item>
