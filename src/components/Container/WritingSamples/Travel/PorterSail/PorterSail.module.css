@@ -1,0 +1,9 @@
+.header {
+  font-size: 15pt;
+  color: black;
+}
+
+/* [class*="header"] {
+  font-size: 16pt;
+  color: black;
+} */
