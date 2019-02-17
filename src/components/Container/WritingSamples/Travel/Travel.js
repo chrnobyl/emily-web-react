@@ -24,10 +24,10 @@ export default class Travel extends Component {
         <div className={styles['samples-container']}>
           <div className={styles['samples-text']}>
             <p>Travel writing samples:</p>
-            <p>Porter & Sail</p>
+            <p className={styles['company-title']}>Porter & Sail</p>
             <PorterSail />
             <br/>
-            <p>Secret Escapes</p>
+            <p className={styles['company-title']}>Secret Escapes</p>
             <SecretEscapes />
           </div>
         </div>
