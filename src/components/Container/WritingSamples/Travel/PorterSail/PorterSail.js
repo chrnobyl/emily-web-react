@@ -10,23 +10,23 @@ const PorterSail = (props) => {
   return (
     <List size='medium'>
       <List.Item>
-        <List.Header>Hotel Photo Gallery Essays</List.Header>
+        <p>Hotel Photo Gallery Essays</p>
         <PhotoEssays />
       </List.Item>
       <List.Item>
-        <List.Header>Feature Guides</List.Header>
+        <p>Feature Guides</p>
         <FeatureGuides />
       </List.Item>
       <List.Item>
-        <List.Header>App Curation</List.Header>
+        <p>App Curation</p>
         <AppCuration />
       </List.Item>
       <List.Item>
-        <List.Header>Venue Write Ups</List.Header>
+        <p>Venue Write Ups</p>
         <VenueWriteUps />
       </List.Item>
       <List.Item>
-        <List.Header>Interviews</List.Header>
+        <p>Interviews</p>
         <Interviews />
       </List.Item>
       <List.Item>
