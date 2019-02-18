@@ -4,9 +4,9 @@ import { Icon } from 'semantic-ui-react'
 import NavBar from '../NavBar/NavBar';
 
 const Header = (props) => {
-  let style = {
-    fontSize: 36
-  }
+  // let style = {
+  //   fontSize: 36
+  // }
 
   return (
     <div>
