@@ -91,7 +91,7 @@ h1 {
 
 }
 
-/* iphon 6 7 8 landscape */
+/* iphone 6 7 8 landscape */
 @media only screen
 and (min-device-width : 375px)
 and (max-device-width : 667px)
@@ -115,14 +115,16 @@ and (orientation : landscape) {
   }
 }
 
+/* ipad */
+
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
 
   [class*="header"] {
-    text-align: left;
-    font-size: 10pt;
-    padding-left: 0em;
-    padding-right: 0em;
-    padding-top: 0em;
+    text-align: center;
+    font-size: 20pt;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 2em;
     padding-bottom: 0em;
   }
 
@@ -130,9 +132,9 @@ and (orientation : landscape) {
     float: right;
     font-size: 10pt;
     padding-left: 0em;
-    padding-right: 0em;
-    padding-top: 0em;
-    padding-bottom: 0em;
+    padding-right: 3em;
+    padding-top: 1em;
+    padding-bottom: 1em;
   }
 
   h1 { font-size: 13pt !important; }
