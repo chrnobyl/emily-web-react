@@ -56,32 +56,6 @@
 
 @media (min-width: 481px) and (max-width: 812px) {
 
-  [class*="intro"] {
-    grid-area: header;
-    text-align: center;
-    font-size: large;
-    color: #DF744A;
-    padding-left: 4rem;
-    padding-right: 4rem;
-    padding-top: 4rem;
-    padding-bottom: 5rem;
-    background-color: #FEDCD2;
-    font-family: var(--main-font);
-    height: 10rem;
-  }
-
-  [class*="icons"] {
-    float: right;
-    font-size: 10pt;
-    padding-left: 0em;
-    padding-right: 0em;
-    padding-top: 0em;
-    padding-bottom: 0em;
-  }
-
-  h1 { font-size: 16pt !important; }
-  h2 { font-size: 14pt !important; }
-  h3 { font-size: 12pt !important; }
 
 }
 
