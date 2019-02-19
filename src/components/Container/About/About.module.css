@@ -273,23 +273,22 @@ and (orientation : portrait) {
   h3 { font-size: 10pt !important; }
 }
 
-/* ipad */
+/* ipad portrait*/
 @media only screen
 and (min-device-width : 768px)
-and (max-device-width : 1024px)  {
+and (max-device-width : 1024px)
+and (orientation : portrait) {
   [class*="about-container"] {
     display: inline-block;
-    /* height: 5em; */
-    min-height: 50vw;
+    min-height: 100vw;
     width: 100vw;
+    background-color: #FEDCD2;
   }
 
   [class*="about-pic"] {
     display: inline-block;
     width: 50%;
-    /* height: 30vh; */
     min-height: 50vw;
-    /* max-height: 100px; */
     float: left;
     background-image: url('./images/em_bowie.jpg');
     background-repeat: no-repeat;
@@ -299,11 +298,49 @@ and (max-device-width : 1024px)  {
 
   [class*="about-text"] {
     float: right;
-    /* height: 30vw; */
     min-height: 50vw;
-    /* height: 100px; */
-    /* overflow-y: scroll; */
-    /* height: inherit; */
+    width: 50%;
+    text-align: center;
+    font-family: var(--main-font);
+    font-size: small;
+    color: #DF744A;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    background-color: #FEDCD2;
+  }
+
+  h1 { font-size: 10pt !important; }
+  h2 { font-size: 10pt !important; }
+  h3 { font-size: 10pt !important; }
+}
+
+/* ipad landscape */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+  [class*="about-container"] {
+    display: inline-block;
+    min-height: 50vw;
+    width: 100vw;
+  }
+
+  [class*="about-pic"] {
+    display: inline-block;
+    width: 50%;
+    min-height: 50vw;
+    float: left;
+    background-image: url('./images/em_bowie.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+
+  [class*="about-text"] {
+    float: right;
+    min-height: 50vw;
     width: 50%;
     text-align: center;
     font-family: var(--main-font);
