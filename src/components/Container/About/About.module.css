@@ -360,6 +360,96 @@ and (orientation : landscape) {
   h3 { font-size: 10pt !important; }
 }
 
+/* ipad pro */
+/* Portrait */
+@media only screen
+  and (min-width: 1024px)
+  and (max-height: 1366px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+    [class*="about-container"] {
+      display: inline-block;
+      min-height: 100vw;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      background-color: #FEDCD2;
+    }
+
+    [class*="about-pic"] {
+      display: inline-block;
+      width: 50%;
+      min-height: 50vw;
+      float: left;
+      background-image: url('./images/em_bowie.jpg');
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-size: cover;
+    }
+
+    [class*="about-text"] {
+      float: right;
+      min-height: 50vw;
+      width: 50%;
+      text-align: center;
+      font-family: var(--main-font);
+      font-size: large;
+      color: #DF744A;
+      padding-left: 2em;
+      padding-right: 2em;
+      padding-top: 2em;
+      padding-bottom: 2em;
+      background-color: #FEDCD2;
+    }
+
+    h1 { font-size: 10pt !important; }
+    h2 { font-size: 10pt !important; }
+    h3 { font-size: 10pt !important; }
+}
+
+/* Landscape */
+@media only screen
+  and (min-width: 1024px)
+  and (max-height: 1366px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+    [class*="about-container"] {
+      display: inline-block;
+      min-height: 50vw;
+      width: 100vw;
+    }
+
+    [class*="about-pic"] {
+      display: inline-block;
+      width: 50%;
+      min-height: 50vw;
+      float: left;
+      background-image: url('./images/em_bowie.jpg');
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-size: cover;
+    }
+
+    [class*="about-text"] {
+      float: right;
+      min-height: 50vw;
+      width: 50%;
+      text-align: center;
+      font-family: var(--main-font);
+      font-size: large;
+      color: #DF744A;
+      padding-left: 2em;
+      padding-right: 2em;
+      padding-top: 2em;
+      padding-bottom: 2em;
+      background-color: #FEDCD2;
+    }
+
+    h1 { font-size: 10pt !important; }
+    h2 { font-size: 10pt !important; }
+    h3 { font-size: 10pt !important; }
+}
+
 
 /* @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
 
