@@ -302,7 +302,7 @@ and (orientation : portrait) {
     width: 50%;
     text-align: center;
     font-family: var(--main-font);
-    font-size: small;
+    font-size: medium;
     color: #DF744A;
     padding-left: 2em;
     padding-right: 2em;
@@ -344,7 +344,7 @@ and (orientation : landscape) {
     width: 50%;
     text-align: center;
     font-family: var(--main-font);
-    font-size: small;
+    font-size: medium;
     color: #DF744A;
     padding-left: 2em;
     padding-right: 2em;
