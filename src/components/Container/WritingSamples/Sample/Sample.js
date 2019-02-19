@@ -8,7 +8,7 @@ const Sample = (props) => {
     <Modal trigger={<a>{props.title}</a>} basic>
       <Header className={styles['header']} content={props.title} />
       <Modal.Content>
-        <ImageCarousel className='carousel' images={props.images} location={'images'} extension={props.extension}/>
+        <ImageCarousel className='carousel' images={props.images} location={'Travel/PorterSail/images'} extension={props.extension}/>
       </Modal.Content>
     </Modal>
   )
