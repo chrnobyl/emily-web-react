@@ -23,10 +23,10 @@ export default class Entertainment extends Component {
         <Transition visible={visible} animation='fade' duration={800}>
           <div className={styles['samples-container']}>
             <div className={styles['samples-text']}>
-              <h1 style={{fontFamily: 'Comfortaa'}}>Here are some Entertainment writing samples</h1>
-              <h2 className={styles['header']} onClick={()=> window.open('https://es.xfinity.com/sdmy/blogs/tv/author/emilyhochberg/page/1/')}>Xfinity</h2>
+              <p>Here are some Entertainment writing samples:</p>
+              <p className={styles['header']} onClick={()=> window.open('https://es.xfinity.com/sdmy/blogs/tv/author/emilyhochberg/page/1/')}>Xfinity</p>
               <Xfinity />
-              <h2 className={styles['header']} onClick={()=> window.open('http://www.mtv.com/news/author/emilyhochberg/')}>MTV</h2>
+              <p className={styles['header']} onClick={()=> window.open('http://www.mtv.com/news/author/emilyhochberg/')}>MTV</p>
               <Mtv />
             </div>
           </div>
