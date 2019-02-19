@@ -11,7 +11,7 @@ const PorterSail = (props) => {
   return (
     <List size='medium'>
       <List.Item>
-        <p className={styles['header']}>Hotel Photo Gallery Essays</p>
+        <p className={styles['top-header']}>Hotel Photo Gallery Essays</p>
         <PhotoEssays />
       </List.Item>
       <List.Item>
