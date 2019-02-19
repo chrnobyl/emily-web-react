@@ -5,16 +5,14 @@ import React from 'react'
 import { Button, Container } from 'semantic-ui-react'
 
 const CustomButtonGroup = ({ slides, size }) => (
-  <Container className={styles['container']} textAlign='center'>
-    <Button.Group size={size}>
-      <Button as={ButtonBack} labelPosition='left' icon='left chevron' content='Back' />
-      <Button as={ButtonNext} labelPosition='right' icon='right chevron' content='Forward' />
-    </Button.Group>
-  </Container>
+  <Button.Group className={styles['button-container']} size={size} fluid>
+    <Button className={styles['buttons']} as={ButtonBack} labelPosition='left' icon='left chevron' content='Back' />
+    <Button className={styles['buttons']} as={ButtonNext} labelPosition='right' icon='right chevron' content='Next' />
+  </Button.Group>
 )
 
 CustomButtonGroup.defaultProps = {
-  size: 'large'
+  size: 'mini'
 }
 
 CustomButtonGroup.propTypes = {

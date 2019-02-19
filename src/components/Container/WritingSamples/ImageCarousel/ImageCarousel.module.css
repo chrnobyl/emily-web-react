@@ -1,4 +1,21 @@
 .carousel {
-  width: 45%;
+  width: 50%;
   margin: 0 auto;
+}
+
+/* .buttons {
+  width: 30%;
+} */
+
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px) {
+  [class*="carousel"] {
+    width: 60vw;
+    margin: 0 auto;
+  }
+
+  /* [class*="buttons"] {
+
+  } */
 }
