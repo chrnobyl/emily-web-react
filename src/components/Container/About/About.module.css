@@ -243,6 +243,84 @@ and (orientation : landscape) {
   h3 { font-size: 10pt !important; }
 }
 
+/* iphone X portrait */
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 812px)
+and (-webkit-device-pixel-ratio : 3)
+and (orientation : portrait) {
+  [class*="about-container"] {
+    display: block;
+    margin: 0 auto;
+  }
+
+  [class*="about-pic"] {
+    display: block;
+    float: none;
+    width: 100%;
+    background-size: contain;
+    height: 100vw;
+  }
+
+  [class*="about-text"] {
+    display: block;
+    float: none;
+    width: 100vw;
+  }
+
+  h1 { font-size: 10pt !important; }
+  h2 { font-size: 10pt !important; }
+  h3 { font-size: 10pt !important; }
+}
+
+/* ipad */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)  {
+  [class*="about-container"] {
+    display: inline-block;
+    /* height: 5em; */
+    min-height: 50vw;
+    width: 100vw;
+  }
+
+  [class*="about-pic"] {
+    display: inline-block;
+    width: 50%;
+    /* height: 30vh; */
+    min-height: 50vw;
+    /* max-height: 100px; */
+    float: left;
+    background-image: url('./images/em_bowie.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+
+  [class*="about-text"] {
+    float: right;
+    /* height: 30vw; */
+    min-height: 50vw;
+    /* height: 100px; */
+    /* overflow-y: scroll; */
+    /* height: inherit; */
+    width: 50%;
+    text-align: center;
+    font-family: var(--main-font);
+    font-size: small;
+    color: #DF744A;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    background-color: #FEDCD2;
+  }
+
+  h1 { font-size: 10pt !important; }
+  h2 { font-size: 10pt !important; }
+  h3 { font-size: 10pt !important; }
+}
+
 
 /* @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
 
