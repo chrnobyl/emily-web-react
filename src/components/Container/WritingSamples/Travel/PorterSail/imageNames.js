@@ -32,8 +32,7 @@ export const stockholmImages = [
 
 export const puroImages = [
                            'puro_1', 'puro_2', 'puro_3', 'puro_4',
-                           'puro_5', 'puro_6', 'puro_7', 'puro_8',
-                           'puro_9'
+                           'puro_5', 'puro_6', 'puro_7', 'puro_8'
                           ]
 
 export const hotelDeNellImages = [
