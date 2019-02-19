@@ -1,3 +1,24 @@
-.container {
-  overflow: visible;
+.button-container {
+  /* overflow: visible; */
+  /* margin: 0 auto; */
+}
+
+/* .buttons {
+  width: 30px;
+} */
+
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px) {
+  [class*="button-container"] {
+    /* width: 40vw; */
+    /* height: 10px; */
+    /* margin: 0 auto; */
+    /* height: 100px; */
+    /* text-align: center; */
+  }
+
+  [class*="buttons"] {
+    /* width: 30%; */
+  }
 }
