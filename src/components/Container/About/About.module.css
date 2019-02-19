@@ -281,7 +281,9 @@ and (orientation : portrait) {
   [class*="about-container"] {
     display: inline-block;
     min-height: 100vw;
-    width: 100vw;
+    width: 100%;
+    margin: 0;
+    padding: 0;
     background-color: #FEDCD2;
   }
 
