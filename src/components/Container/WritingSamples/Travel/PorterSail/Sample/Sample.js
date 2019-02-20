@@ -1,7 +1,7 @@
 import React from 'react'
 import { Modal, Header } from 'semantic-ui-react'
 import styles from './Sample.module.css'
-import ImageCarousel from '../ImageCarousel/ImageCarousel'
+import ImageCarousel from '../../../ImageCarousel/ImageCarousel'
 
 const Sample = (props) => {
   return (
