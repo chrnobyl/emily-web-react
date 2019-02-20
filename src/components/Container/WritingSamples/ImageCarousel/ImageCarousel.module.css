@@ -3,9 +3,10 @@
   margin: 0 auto;
 }
 
-/* .buttons {
-  width: 30%;
-} */
+.buttons {
+  width: 25%;
+  height: 25%;
+}
 
 @media only screen
 and (min-device-width : 375px)
