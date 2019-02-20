@@ -4,11 +4,55 @@
 }
 
 .modal {
-  width: 200vw;
+  /* width: 200vw; */
 }
 
 .image {
   width: auto;
-  height: 150vh;
-  /* overflow: hidden; */
+  height: 175vh;
+  margin: 0 auto;
+}
+
+/* most smartphones */
+@media only screen and (min-device-width: 320px)
+and (max-device-width: 480px)
+and (orientation: portrait){
+  [class*="image"] {
+    height: 70vh;
+    margin: 0 auto;
+  }
+}
+
+/* iphone 6 7 8 */
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px)
+and (orientation: portrait){
+  [class*="image"] {
+    height: 70vh;
+    margin: 0 auto;
+  }
+}
+
+/* iphone X */
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 812px)
+and (-webkit-device-pixel-ratio : 3)
+and (orientation : portrait){
+  [class*="image"] {
+    height: 70vh;
+    margin: 0 auto;
+  }
+}
+
+/* ipad */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait){
+  [class*="image"] {
+    height: 70vh;
+    margin: 0 auto;
+  }
 }
