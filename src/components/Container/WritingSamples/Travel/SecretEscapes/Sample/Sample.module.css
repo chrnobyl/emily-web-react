@@ -1,0 +1,14 @@
+.header {
+  font-family: var(--main-font);
+  text-align: center;
+}
+
+.modal {
+  width: 150vw;
+}
+
+.image {
+  /* width: 125vw; */
+  height: 150vh;
+  overflow: hidden;
+}
