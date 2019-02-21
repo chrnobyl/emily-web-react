@@ -41,7 +41,7 @@ export default class Home extends Component {
             </div>
           </Transition>
 
-          <Lifestyle/>
+          <Lifestyle />
 
           <Logos />
 

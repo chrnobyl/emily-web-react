@@ -39,11 +39,10 @@
 
   [class*="lifestyle"] {
     /* grid-area: lifestyle-desc; */
-    float: left;
-    /* display: inline-block; */
-    /* position: relative; */
-    /* max-width: 50vw; */
-    width: 100vw;
+    float: right;
+    display: inline-block;
+    text-align: left;
+    max-width: 50vw;
     font-size: 11pt;
     padding-left: 1em;
     padding-right: 1em;
@@ -51,9 +50,9 @@
     padding-bottom: 0em;
     font-family: var(--main-font);
     grid-row-start: 3;
-    grid-row-end: 3;
-    grid-column-start: 2;
-    grid-column-end: 2;
+    grid-column: auto;
+    clear: both;
+
   }
 
   h1 { font-size: 10pt !important; }
@@ -62,11 +61,31 @@
 
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+/* iphone 6 7 8 portrait */
+/* @media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px)
+and (orientation : portrait) {
+  [class*="lifestyle"] {
+    float: left;
+    width: 50vw;
+    font-size: 11pt;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
+    padding-bottom: 0em;
+    font-family: var(--main-font);
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+} */
+
+/* @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
 
   [class*="lifestyle"] {
     grid-area: lifestyle-desc;
-    /* float: left; */
     text-align: left;
     font-size: 9pt;
     padding-left: 1em;
@@ -80,4 +99,4 @@
   h2 { font-size: 11pt !important; }
   h3 { font-size: 10pt !important; }
 
-}
+} */
