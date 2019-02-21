@@ -160,12 +160,41 @@
     width: 100vw;
     grid-column-gap: 1em;
     grid-row-gap: 0;
-    grid-template-rows: 10em 5em 10em;
+    grid-template-rows: 10em 10em 10em 10em 10em 10em;
     grid-template-columns: repeat(10em);
     grid-template-areas:
       'logo-header'
-      'description'
-      'logo';
+      'redfin people'
+      'xfinity buzzfeed'
+      'grey portersail'
+      'fabfitfun mtv'
+      'jpost secret';
+  }
+
+  [class*="redfin"] {
+    grid-area: redfin;
+    /* grid-column: 1;
+    grid-row: 2; */
+    padding-left: 3em;
+    max-height:100%;
+    width: 100%;
+    background-image: url(./images/redfin.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+    cursor: pointer;
+  }
+
+  [class*="people"] {
+    grid-area: logo;
+    grid-column: 2;
+    grid-row: 2;
+    max-height:100%;
+    width: 100%;
+    background-image: url(./images/peoplemag.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
   }
 
   h1 { font-size: 16pt !important; }
@@ -187,16 +216,43 @@
     width: 100vw;
     grid-column-gap: 1em;
     grid-row-gap: 0;
-    grid-row-start: 4;
-    grid-row-end: 5;
-    grid-template-rows: 10em 10em;
+    grid-template-rows: 10em 10em 10em 10em 10em 10em;
     grid-template-columns: repeat(10em);
     grid-template-areas:
       'logo-header'
-      'description'
-      'logo';
+      'redfin people'
+      'xfinity buzzfeed'
+      'grey portersail'
+      'fabfitfun mtv'
+      'jpost secret';
   }
 
+  [class*="redfin"] {
+    grid-area: redfin;
+    /* grid-column: 1;
+    grid-row: 2; */
+    padding-left: 3em;
+    max-height:100%;
+    width: 100%;
+    background-image: url(./images/redfin.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+    cursor: pointer;
+  }
+
+  [class*="people"] {
+    grid-area: logo;
+    grid-column: 2;
+    grid-row: 2;
+    max-height:100%;
+    width: 100%;
+    background-image: url(./images/peoplemag.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+  }
+  
   h1 { font-size: 10pt !important; }
   h2 { font-size: 10pt !important; }
   h3 { font-size: 10pt !important; }

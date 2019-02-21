@@ -39,8 +39,8 @@
 
   [class*="lifestyle"] {
     /* grid-area: lifestyle-desc; */
-    float: right;
-    display: inline-block;
+    float: left;
+    /* display: inline-block; */
     text-align: left;
     max-width: 50vw;
     font-size: 11pt;
@@ -51,7 +51,7 @@
     font-family: var(--main-font);
     grid-row-start: 3;
     grid-column: auto;
-    clear: both;
+    /* clear: both; */
 
   }
 

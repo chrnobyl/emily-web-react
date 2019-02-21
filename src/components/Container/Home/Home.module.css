@@ -118,7 +118,7 @@
 
   [class*="lifestyle-pic"] {
     display: inline-block;
-    float: right;
+    /* float: right; */
     max-width: 50vw;
     position: relative;
     background-image: url('./em_food_lo_res.jpg');
