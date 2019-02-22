@@ -38,9 +38,7 @@
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
 
   [class*="lifestyle"] {
-    /* grid-area: lifestyle-desc; */
     float: left;
-    /* display: inline-block; */
     text-align: left;
     max-width: 50vw;
     font-size: 11pt;
@@ -51,8 +49,6 @@
     font-family: var(--main-font);
     grid-row-start: 3;
     grid-column: auto;
-    /* clear: both; */
-
   }
 
   h1 { font-size: 10pt !important; }
@@ -68,9 +64,7 @@ and (min-device-width : 375px)
 and (max-device-width : 667px)
 and (orientation : landscape) {
   [class*="lifestyle"] {
-    /* grid-area: lifestyle-desc; */
     float: left;
-    /* display: inline-block; */
     text-align: left;
     max-width: 50vw;
     font-size: 11pt;
@@ -81,8 +75,6 @@ and (orientation : landscape) {
     font-family: var(--main-font);
     grid-row-start: 3;
     grid-column: auto;
-    /* clear: both; */
-
   }
 
   h1 { font-size: 10pt !important; }
@@ -96,9 +88,7 @@ and (min-device-width : 414px)
 and (max-device-width : 736px)
 and (orientation : portrait) {
   [class*="lifestyle"] {
-    /* grid-area: lifestyle-desc; */
     float: left;
-    /* display: inline-block; */
     text-align: left;
     max-width: 50vw;
     font-size: 11pt;
@@ -109,8 +99,6 @@ and (orientation : portrait) {
     font-family: var(--main-font);
     grid-row-start: 3;
     grid-column: auto;
-    /* clear: both; */
-
   }
 
   h1 { font-size: 10pt !important; }
@@ -124,9 +112,7 @@ and (min-device-width : 414px)
 and (max-device-width : 736px)
 and (orientation : landscape) {
   [class*="lifestyle"] {
-    /* grid-area: lifestyle-desc; */
     float: left;
-    /* display: inline-block; */
     text-align: left;
     max-width: 50vw;
     font-size: 11pt;
@@ -137,8 +123,6 @@ and (orientation : landscape) {
     font-family: var(--main-font);
     grid-row-start: 3;
     grid-column: auto;
-    /* clear: both; */
-
   }
 
   h1 { font-size: 10pt !important; }
@@ -153,9 +137,7 @@ and (max-device-width : 812px)
 and (-webkit-device-pixel-ratio : 3)
 and (orientation : landscape) {
   [class*="lifestyle"] {
-    /* grid-area: lifestyle-desc; */
     float: left;
-    /* display: inline-block; */
     text-align: left;
     max-width: 50vw;
     font-size: 11pt;
@@ -166,8 +148,31 @@ and (orientation : landscape) {
     font-family: var(--main-font);
     grid-row-start: 3;
     grid-column: auto;
-    /* clear: both; */
+  }
 
+  h1 { font-size: 10pt !important; }
+  h2 { font-size: 10pt !important; }
+  h3 { font-size: 10pt !important; }
+}
+
+/* Pixel XL Landscape */
+@media only screen
+and (device-width: 412px)
+and (device-height: 823px)
+and (-webkit-device-pixel-ratio: 3.5)
+and (orientation: landscape) {
+  [class*="lifestyle"] {
+    float: left;
+    text-align: left;
+    max-width: 50vw;
+    font-size: 11pt;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
+    padding-bottom: 0em;
+    font-family: var(--main-font);
+    grid-row-start: 3;
+    grid-column: auto;
   }
 
   h1 { font-size: 10pt !important; }

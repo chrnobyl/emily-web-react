@@ -844,24 +844,162 @@ and (orientation : landscape) {
   h3 { font-size: 10pt !important; }
 }
 
-/* @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
-
+/* Pixel XL Landscape */
+@media only screen
+and (device-width: 412px)
+and (device-height: 823px)
+and (-webkit-device-pixel-ratio: 3.5)
+and (orientation: landscape) {
   [class*="logo-grid"] {
     display: grid;
     grid-area: logo;
     width: 100vw;
-    grid-column-gap: 1em;
+    grid-column-gap: 0em;
     grid-row-gap: 0;
-    grid-template-rows: 10em 5em 10em;
-    grid-template-columns: repeat(10em);
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-template-rows: 25vw 25vw 25vw 25vw 25vw 25vw;
+    grid-template-columns: 50vw 50vw;
     grid-template-areas:
       'logo-header'
-      'description'
-      'logo';
+      'redfin people'
+      'xfinity buzzfeed'
+      'grey portersail'
+      'fabfitfun mtv'
+      'jpost secret';
   }
 
-  h1 { font-size: 13pt !important; }
-  h2 { font-size: 11pt !important; }
-  h3 { font-size: 10pt !important; }
+  [class*="redfin"] {
+    grid-area: redfin;
+    grid-column: 1;
+    grid-row: 2;
+    margin-left: 1em;
+    max-height: 100%;
+    width: 90%;
+    background-image: url(./images/redfin.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+    cursor: pointer;
+  }
 
-} */
+  [class*="people"] {
+    grid-area: people;
+    grid-column: 2;
+    grid-row: 2;
+    margin-left: 1em;
+    max-height: 100%;
+    width: 80%;
+    background-image: url(./images/peoplemag.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+  }
+
+  [class*="xfinity"] {
+    grid-area: xfinity;
+    grid-column: 1;
+    grid-row: 3;
+    max-height: 100%;
+    width: 100%;
+    background-image: url(./images/xfinity.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+    cursor: pointer;
+  }
+
+  [class*="buzzfeed"] {
+    grid-area: buzzfeed;
+    grid-column: 2;
+    grid-row: 3;
+    max-height: 100%;
+    width: 100%;
+    background-image: url(./images/buzzfeed.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+  }
+
+  [class*="grey"] {
+    grid-area: grey;
+    grid-column: 1;
+    grid-row: 4;
+    margin-left: 2em;
+    max-height: 100%;
+    width: 75%;
+    background-image: url(./images/grey.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+  }
+
+  [class*="portersail"] {
+    grid-area: portersail;
+    grid-column: 2;
+    grid-row: 4;
+    max-height: 100%;
+    width: 100%;
+    background-image: url(./images/portersail.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+
+  [class*="fabfitfun"] {
+    grid-area: fabfitfun;
+    grid-column: 1;
+    grid-row: 5;
+    margin-left: 2em;
+    max-height: 100%;
+    width: 80%;
+    background-image: url(./images/fabfitfun.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+  }
+
+  [class*="mtv"] {
+    grid-area: mtv;
+    grid-column: 2;
+    grid-row: 5;
+    max-height: 100%;
+    width: 100%;
+    background-image: url(./images/mtv.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+    cursor: pointer;
+  }
+
+  [class*="jerusalem-post"] {
+    grid-area: jpost;
+    grid-column: 1;
+    grid-row: 6;
+    margin-left: 1em;
+    max-height: 100%;
+    width: 90%;
+    background-image: url(./images/jerusalempost.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+  }
+
+  [class*="secret-escapes"] {
+    grid-area: secret;
+    grid-column: 2;
+    grid-row: 6;
+    margin-left: 1em;
+    max-height: 100%;
+    width: 85%;
+    background-image: url(./images/secretescapes.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+  }
+
+  h1 { font-size: 10pt !important; }
+  h2 { font-size: 10pt !important; }
+  h3 { font-size: 10pt !important; }
+}
