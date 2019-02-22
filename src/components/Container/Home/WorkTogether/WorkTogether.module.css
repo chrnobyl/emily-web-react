@@ -147,6 +147,33 @@ and (orientation : landscape) {
   h3 { font-size: 10pt !important; }
 }
 
+/* iphone X landscape */
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 812px)
+and (-webkit-device-pixel-ratio : 3)
+and (orientation : landscape) {
+  [class*="work-together"] {
+    grid-area: work-together;
+    text-align: center;
+    font-size: large;
+    font-family: var(--main-font);
+    font-weight: bolder;
+    color: #DF744A;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 5em;
+    padding-bottom: 2em;
+    background-color: #8FD8D2;
+    grid-row: 6;
+    grid-column: 1, 2;
+  }
+
+  h1 { font-size: 10pt !important; }
+  h2 { font-size: 10pt !important; }
+  h3 { font-size: 10pt !important; }
+}
+
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
 
   [class*="work-together"] {
