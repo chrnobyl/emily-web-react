@@ -174,11 +174,14 @@ and (orientation : landscape) {
   h3 { font-size: 10pt !important; }
 }
 
-/* @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
-
+/* pixel 2 XL landscape */
+@media only screen
+and (device-width: 412px)
+and (device-height: 823px)
+and (-webkit-device-pixel-ratio: 3.5)
+and (orientation: landscape) {
   [class*="work-together"] {
     grid-area: work-together;
-    float: left;
     text-align: center;
     font-size: large;
     font-family: var(--main-font);
@@ -186,13 +189,14 @@ and (orientation : landscape) {
     color: #DF744A;
     padding-left: 2em;
     padding-right: 2em;
-    padding-top: 15em;
+    padding-top: 5em;
     padding-bottom: 2em;
     background-color: #8FD8D2;
+    grid-row: 6;
+    grid-column: 1, 2;
   }
 
-  h1 { font-size: 13pt !important; }
-  h2 { font-size: 11pt !important; }
+  h1 { font-size: 10pt !important; }
+  h2 { font-size: 10pt !important; }
   h3 { font-size: 10pt !important; }
-
-} */
+}
