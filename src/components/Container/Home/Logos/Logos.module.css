@@ -380,7 +380,7 @@ and (orientation : landscape) {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 4;
-    grid-template-rows: 50vw 50vw 50vw 50vw 50vw 50vw;
+    grid-template-rows: 25vw 25vw 25vw 25vw 25vw 25vw;
     grid-template-columns: 50vw 50vw;
     grid-template-areas:
       'logo-header'
@@ -435,9 +435,8 @@ and (orientation : landscape) {
     grid-area: buzzfeed;
     grid-column: 2;
     grid-row: 3;
-    margin-left: 1em;
     max-height: 100%;
-    width: 85%;
+    width: 100%;
     background-image: url(./images/buzzfeed.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -466,7 +465,7 @@ and (orientation : landscape) {
     background-image: url(./images/portersail.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    background-size: contain;
+    background-size: cover;
   }
 
   [class*="fabfitfun"] {
