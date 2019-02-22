@@ -60,18 +60,12 @@
   background-size: cover;
 }
 
-@media (min-width: 481px) and (max-width: 812px) {
-
-
-}
-
 /*
   ##Device = Most of the Smartphones Mobiles (Portrait)
   ##Screen = B/w 320px to 479px
 */
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-
   [class*="intro"] {
     grid-area: header;
     text-align: center;
@@ -119,7 +113,6 @@
 
   [class*="lifestyle-pic"] {
     display: inline-block;
-    /* float: right; */
     max-width: 50vw;
     position: relative;
     background-image: url('./em_food_lo_res.jpg');
@@ -392,10 +385,11 @@ and (orientation : landscape) {
   h3 { font-size: 10pt !important; }
 }
 
-/* galaxy s5 */
+/* galaxy s5 portrait */
 @media screen and (device-width: 360px)
 and (device-height: 640px)
-and (-webkit-device-pixel-ratio: 3){
+and (-webkit-device-pixel-ratio: 3)
+and (orientation: portrait){
   [class*="intro"] {
     grid-area: header;
     text-align: center;
@@ -471,4 +465,163 @@ and (-webkit-device-pixel-ratio: 3){
   h2 { font-size: 10pt !important; }
   h3 { font-size: 10pt !important; }
 
+}
+
+/* galaxy s5 landscape */
+@media screen and (device-width: 360px)
+and (device-height: 640px)
+and (-webkit-device-pixel-ratio: 3)
+and (orientation: landscape){
+  [class*="intro"] {
+    grid-area: header;
+    text-align: center;
+    font-size: 10pt;
+    color: #DF744A;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+    background-color: #FEDCD2;
+    font-family: var(--main-font);
+    max-width: 100vw;
+    height: inherit;
+  }
+
+  [class*="home-grid"] {
+    display: grid;
+    font-size: 10pt;
+    max-width: 100vw;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+    grid-template-rows: 10em 50em 50em 60em 25em 25em;
+    grid-template-columns: 50vw 50vw;
+    grid-template-areas:
+      'header'
+      'travel-pic travel-desc'
+      'lifestyle-desc lifestyle-pic'
+      'logo'
+      'work-pic'
+      'work-together'
+  }
+
+  [class*="travel-pic"] {
+    grid-area: trav-pic;
+    max-width: 50vw;
+    background-image: url('./em_azores_lo_res.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+
+  [class*="lifestyle-pic"] {
+    display: inline-block;
+    /* float: right; */
+    max-width: 50vw;
+    position: relative;
+    background-image: url('./em_food_lo_res.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column: auto;
+    clear:both;
+  }
+
+  [class*="work-pic"] {
+    grid-area: work-pic;
+    width: 100vw;
+    background-image: url('./go_get_em_lo_res.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    grid-row: 5;
+    grid-column: auto;
+  }
+
+  h1 { font-size: 10pt !important; }
+  h2 { font-size: 10pt !important; }
+  h3 { font-size: 10pt !important; }
+}
+
+/* Pixel 2 portrait */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.77)
+and (orientation: portrait){
+    [class*="intro"] {
+      grid-area: header;
+      text-align: center;
+      font-size: 10pt;
+      color: #DF744A;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      padding-top: 2rem;
+      padding-bottom: 5rem;
+      background-color: #FEDCD2;
+      font-family: var(--main-font);
+      max-width: 100vw;
+      height: inherit;
+    }
+
+    [class*="home-grid"] {
+      display: grid;
+      font-size: 10pt;
+      max-width: 100vw;
+      grid-column-gap: 0;
+      grid-row-gap: 0;
+      grid-template-rows: 10em 50em 50em 95em 25em 25em;
+      grid-template-columns: 50vw 50vw;
+      grid-template-areas:
+        'header'
+        'travel-pic travel-desc'
+        'lifestyle-desc lifestyle-pic'
+        'logo'
+        'work-pic'
+        'work-together'
+    }
+
+    [class*="travel-pic"] {
+      grid-area: trav-pic;
+      max-width: 50vw;
+      background-image: url('./em_azores_lo_res.jpg');
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-size: cover;
+      grid-row-start: 2;
+      grid-row-end: 2;
+      grid-column-start: 1;
+      grid-column-end: 1;
+    }
+
+    [class*="lifestyle-pic"] {
+      display: inline-block;
+      max-width: 50vw;
+      position: relative;
+      background-image: url('./em_food_lo_res.jpg');
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-size: cover;
+      grid-row-start: 3;
+      grid-row-end: 3;
+      grid-column: auto;
+      clear:both;
+    }
+
+    [class*="work-pic"] {
+      grid-area: work-pic;
+      width: 100vw;
+      background-image: url('./go_get_em_lo_res.jpg');
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-size: cover;
+      grid-row: 5;
+      grid-column: auto;
+    }
+
+    h1 { font-size: 10pt !important; }
+    h2 { font-size: 10pt !important; }
+    h3 { font-size: 10pt !important; }
 }
