@@ -845,11 +845,8 @@ and (orientation : landscape) {
 }
 
 /* Pixel XL Landscape */
-@media only screen
-and (device-width: 412px)
-and (device-height: 823px)
-and (-webkit-device-pixel-ratio: 3.5)
-and (orientation: landscape) {
+@media only screen and (min-width: 823px)
+and (orientation: landscape){
   [class*="logo-grid"] {
     display: grid;
     grid-area: logo;
