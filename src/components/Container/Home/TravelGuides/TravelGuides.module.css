@@ -79,3 +79,26 @@ and (orientation : landscape) {
   h2 { font-size: 10pt !important; }
   h3 { font-size: 10pt !important; }
 }
+
+/* iphone 6 7 8 PLUS landscape */
+@media only screen
+and (min-device-width : 414px)
+and (max-device-width : 736px)
+and (orientation : landscape) {
+  [class*="travel-guides"] {
+    grid-area: travel-desc;
+    /* float: left; */
+    text-align: left;
+    max-width: 50vw;
+    font-size: 11pt;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
+    padding-bottom: 0em;
+    font-family: var(--main-font);
+  }
+
+  h1 { font-size: 10pt !important; }
+  h2 { font-size: 10pt !important; }
+  h3 { font-size: 10pt !important; }
+}
