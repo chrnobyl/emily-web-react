@@ -175,11 +175,8 @@ and (orientation : landscape) {
 }
 
 /* pixel 2 XL landscape */
-@media only screen
-and (device-width: 412px)
-and (device-height: 823px)
-and (-webkit-device-pixel-ratio: 3.5)
-and (orientation: landscape) {
+@media only screen and (min-width: 823px)
+and (orientation: landscape){
   [class*="work-together"] {
     grid-area: work-together;
     text-align: center;
