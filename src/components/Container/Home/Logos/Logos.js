@@ -18,7 +18,7 @@ export default class Logos extends Component {
       <div className={styles['logo-grid']}>
         <Transition visible={visible} animation='fade' duration={800}>
           <div className={styles['logo-intro']}>
-            I've written for these companies:
+            I've written for several companies on lifestyle, travel, and entertainment. Here are a few that have published my work:
           </div>
         </Transition>
 
