@@ -151,11 +151,10 @@ and (orientation : landscape) {
 }
 
 /* Pixel XL Landscape */
-@media only screen and (min-width: 823px)
+/* @media only screen and (min-width: 823px)
 and (orientation: landscape){
   [class*="travel-guides"] {
     grid-area: travel-desc;
-    /* float: left; */
     text-align: left;
     max-width: 50vw;
     font-size: 11pt;
@@ -169,7 +168,7 @@ and (orientation: landscape){
   h1 { font-size: 10pt !important; }
   h2 { font-size: 10pt !important; }
   h3 { font-size: 10pt !important; }
-}
+} */
 
 /* ipad portrait*/
 @media only screen
