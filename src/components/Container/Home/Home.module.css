@@ -817,7 +817,88 @@ and (orientation : portrait) {
       'lifestyle-desc lifestyle-pic'
       'logo'
       'work-pic'
-      'work-together'
+      'work-together';
+  }
+
+  [class*="travel-pic"] {
+    grid-area: trav-pic;
+    max-width: 50vw;
+    background-image: url('./em_azores_lo_res.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+
+  [class*="lifestyle-pic"] {
+    display: inline-block;
+    /* float: right; */
+    max-width: 50vw;
+    position: relative;
+    background-image: url('./em_food_lo_res.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column: auto;
+    clear:both;
+  }
+
+  [class*="work-pic"] {
+    grid-area: work-pic;
+    width: 100vw;
+    background-image: url('./go_get_em_lo_res.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    grid-row: 5;
+    grid-column: auto;
+  }
+
+  h1 { font-size: 10pt !important; }
+  h2 { font-size: 10pt !important; }
+  h3 { font-size: 10pt !important; }
+}
+
+/* ipad landscape */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+  [class*="intro"] {
+    grid-area: header;
+    text-align: center;
+    font-size: 10pt;
+    color: #DF744A;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+    background-color: #FEDCD2;
+    font-family: var(--main-font);
+    max-width: 100vw;
+    height: inherit;
+  }
+
+  [class*="home-grid"] {
+    display: grid;
+    font-size: 10pt;
+    max-width: 100vw;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+    grid-template-rows: 10em 30em 30em 90em 25em 20em;
+    grid-template-columns: 50vw 50vw;
+    grid-template-areas:
+      'header'
+      'travel-pic travel-desc'
+      'lifestyle-desc lifestyle-pic'
+      'logo'
+      'work-pic'
+      'work-together';
   }
 
   [class*="travel-pic"] {
