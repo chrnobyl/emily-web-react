@@ -25,7 +25,7 @@ export default class Home extends Component {
         <div className={styles['home-grid']}>
           <Transition visible={visible} animation='fade' duration={800}>
             <div className={styles['intro']}>
-                I've written for several publications on travel, lifestyle, and real estate. My true passion lies in discovering new places and finding the best of what they have to offer.
+                I'm an experienced Lifestyle Editor with a demonstrated history of writing and editing content for about travel, culture, entertainment and style.
             </div>
           </Transition>
 
