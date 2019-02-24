@@ -355,11 +355,9 @@ and (orientation : landscape) {
   }
 
   [class*="redfin"] {
-    grid-area: redfin;
     grid-column: 1;
     grid-row: 2;
     margin-left: 1em;
-    max-height: 100%;
     width: 90%;
     background-image: url(./images/redfin.png);
     background-repeat: no-repeat;
@@ -369,11 +367,9 @@ and (orientation : landscape) {
   }
 
   [class*="people"] {
-    grid-area: people;
     grid-column: 2;
     grid-row: 2;
     margin-left: 1em;
-    max-height: 100%;
     width: 80%;
     background-image: url(./images/peoplemag.png);
     background-repeat: no-repeat;
@@ -382,10 +378,8 @@ and (orientation : landscape) {
   }
 
   [class*="xfinity"] {
-    grid-area: xfinity;
     grid-column: 1;
     grid-row: 3;
-    max-height: 100%;
     width: 100%;
     background-image: url(./images/xfinity.png);
     background-repeat: no-repeat;
@@ -395,10 +389,8 @@ and (orientation : landscape) {
   }
 
   [class*="buzzfeed"] {
-    grid-area: buzzfeed;
     grid-column: 2;
     grid-row: 3;
-    max-height: 100%;
     width: 100%;
     background-image: url(./images/buzzfeed.png);
     background-repeat: no-repeat;
@@ -407,11 +399,9 @@ and (orientation : landscape) {
   }
 
   [class*="grey"] {
-    grid-area: grey;
     grid-column: 1;
     grid-row: 4;
     margin-left: 2em;
-    max-height: 100%;
     width: 75%;
     background-image: url(./images/grey.png);
     background-repeat: no-repeat;
@@ -420,10 +410,8 @@ and (orientation : landscape) {
   }
 
   [class*="portersail"] {
-    grid-area: portersail;
     grid-column: 2;
     grid-row: 4;
-    max-height: 100%;
     width: 100%;
     background-image: url(./images/portersail.png);
     background-repeat: no-repeat;
@@ -432,11 +420,9 @@ and (orientation : landscape) {
   }
 
   [class*="fabfitfun"] {
-    grid-area: fabfitfun;
     grid-column: 1;
     grid-row: 5;
     margin-left: 2em;
-    max-height: 100%;
     width: 80%;
     background-image: url(./images/fabfitfun.png);
     background-repeat: no-repeat;
@@ -445,10 +431,8 @@ and (orientation : landscape) {
   }
 
   [class*="mtv"] {
-    grid-area: mtv;
     grid-column: 2;
     grid-row: 5;
-    max-height: 100%;
     width: 100%;
     background-image: url(./images/mtv.png);
     background-repeat: no-repeat;
@@ -458,11 +442,9 @@ and (orientation : landscape) {
   }
 
   [class*="jerusalem-post"] {
-    grid-area: jpost;
     grid-column: 1;
     grid-row: 6;
     margin-left: 1em;
-    max-height: 100%;
     width: 90%;
     background-image: url(./images/jerusalempost.png);
     background-repeat: no-repeat;
@@ -471,11 +453,9 @@ and (orientation : landscape) {
   }
 
   [class*="secret-escapes"] {
-    grid-area: secret;
     grid-column: 2;
     grid-row: 6;
     margin-left: 1em;
-    max-height: 100%;
     width: 85%;
     background-image: url(./images/secretescapes.png);
     background-repeat: no-repeat;
