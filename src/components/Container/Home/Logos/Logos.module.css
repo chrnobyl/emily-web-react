@@ -5,7 +5,7 @@
   grid-column-gap: 1em;
   grid-row-gap: 0;
   grid-template-rows: 10em 20em;
-  /* grid-template-columns: auto; */
+  grid-template-columns: 10vw;
   grid-template-areas:
     'logo-header'
     'logo';
@@ -28,7 +28,6 @@
 }
 
 .redfin {
-  grid-area: logo;
   grid-column: 1;
   grid-row: 2;
   padding-left: 3em;
@@ -42,10 +41,8 @@
 }
 
 .people {
-  grid-area: logo;
   grid-column: 2;
   grid-row: 2;
-  max-height:100%;
   width: 100%;
   background-image: url(./images/peoplemag.png);
   background-repeat: no-repeat;
@@ -54,10 +51,8 @@
 }
 
 .xfinity {
-  grid-area: logo;
   grid-column: 3;
   grid-row: 2;
-  max-height:100%;
   width: 100%;
   background-image: url(./images/xfinity.png);
   background-repeat: no-repeat;
@@ -67,10 +62,8 @@
 }
 
 .buzzfeed {
-  grid-area: logo;
   grid-column: 4;
   grid-row: 2;
-  max-height:100%;
   width: 100%;
   background-image: url(./images/buzzfeed.png);
   background-repeat: no-repeat;
@@ -79,10 +72,8 @@
 }
 
 .grey {
-  grid-area: logo;
   grid-column: 5;
   grid-row: 2;
-  max-height:100%;
   width: 100%;
   background-image: url(./images/grey.png);
   background-repeat: no-repeat;
@@ -91,10 +82,8 @@
 }
 
 .portersail {
-  grid-area: logo;
   grid-column: 6;
   grid-row: 2;
-  max-height:100%;
   width: 100%;
   background-image: url(./images/portersail.png);
   background-repeat: no-repeat;
@@ -103,10 +92,8 @@
 }
 
 .fabfitfun {
-  grid-area: logo;
   grid-column: 7;
   grid-row: 2;
-  max-height:100%;
   width: 100%;
   background-image: url(./images/fabfitfun.png);
   background-repeat: no-repeat;
@@ -115,10 +102,8 @@
 }
 
 .mtv {
-  grid-area: logo;
   grid-column: 8;
   grid-row: 2;
-  max-height:100%;
   width: 100%;
   background-image: url(./images/mtv.png);
   background-repeat: no-repeat;
@@ -128,10 +113,8 @@
 }
 
 .jerusalem-post {
-  grid-area: logo;
   grid-column: 9;
   grid-row: 2;
-  max-height:100%;
   width: 100%;
   background-image: url(./images/jerusalempost.png);
   background-repeat: no-repeat;
@@ -140,11 +123,9 @@
 }
 
 .secret-escapes {
-  grid-area: logo;
   grid-column: 10;
   grid-row: 2;
   padding-right: 2em;
-  max-height:100%;
   width: 100%;
   background-image: url(./images/secretescapes.png);
   background-repeat: no-repeat;
