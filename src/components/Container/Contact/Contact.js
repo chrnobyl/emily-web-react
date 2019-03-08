@@ -25,12 +25,7 @@ export default class Contact extends Component {
     this.handleSubmit = this.handleSubmit.bind(this)
 
   }
-  // state = {
-  //   visible: false,
-  //   name: "",
-  //   email: "",
-  //   message: ""
-  // }
+
   static sender = 'sender@example.com'
 
   toggleVisibility = () => this.setState({ visible: !this.state.visible })
